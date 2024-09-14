@@ -1,0 +1,35 @@
+export const INITIAL_VALUES = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  additional_info: "",
+  searchPeriod: "",
+  make: "",
+  model: "",
+  year: "",
+  trim: "",
+  condition: "",
+  fuel_type: "",
+  bodyStyle: "",
+  transmission: "",
+  driveLine: "",
+  // condition: "",
+  // color: "",
+  frk_exterior_color: "",
+  frk_interior_color: "",
+  odometer: "",
+  odometer_type: 1,
+  financial: {
+    kind: "",
+    type: null,
+    order: 0,
+  },
+};
+
+export const DIREVE_TYPE = [
+  { label: "Fwd", value: 1 },
+  { label: "4X4", value: 2 },
+  { label: "Awd", value: 3 },
+  { label: "Rwd", value: 4 },
+];

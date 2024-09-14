@@ -1,0 +1,394 @@
+.special-title_main-2 {
+  @include all_fonts_styles(30px, $fw-bold, $main-font, $black-color);
+
+  @include tablet {
+    @include all_fonts_styles(25px, $fw-bold, $main-font, $black-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(25px, $fw-bold, $main-font, $black-color);
+  }
+}
+.scale_hover_sistem-2 {
+  transform: scale(1);
+  transition: all 200ms ease-in-out;
+}
+.scale_hover_sistem-2:hover {
+  transition: all 200ms ease-in-out;
+  transform: scale(1.05);
+}
+.home-welcome_txt-2 {
+  @include all_fonts_styles(18px, $fw-bold, $main-font, $black-color);
+}
+
+.home_minivans_caontainer-2 {
+  h1 {
+    @include all_fonts_styles(30px, $fw-bold, $main-font, #fff);
+  }
+  clip-path: polygon(
+    0% 15%,
+    22% 15%,
+    30% 0,
+    68% 0,
+    78% 15%,
+    100% 15%,
+    100% 85%,
+    100% 100%,
+    85% 100%,
+    15% 100%,
+    0 100%,
+    0% 85%
+  );
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  // height: 700px;
+  z-index: 0;
+
+  @include mobile {
+    // height: 570px;
+  }
+  @include tablet {
+    // height: 550px;
+  }
+}
+.quick_cover {
+  position: relative;
+  z-index: 3;
+}
+.up-shap-7 {
+  clip-path: polygon(0 0, 100% 13%, 100% 87%, 0 100%);
+  background-color: #fff;
+  width: 189px;
+  // height: 45px;
+  position: relative;
+  transform: translate(193%, -67%);
+}
+
+.down-shap-7 {
+  clip-path: polygon(0 0, 100% 13%, 100% 87%, 0 100%);
+  background-color: #fff;
+  width: 189px;
+  // height: 45px;
+  position: relative;
+  transform: translate(95%, 64%);
+}
+
+.shap-7 {
+  clip-path: polygon(20% 79%, 83% 79%, 100% 100%, 0% 100%);
+  background-color: #fff;
+  width: 189px;
+  height: 100%;
+  position: relative;
+  transform: translate(90%, -100%);
+}
+
+.welcome_site-7 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  // background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+
+  p {
+    color: $black-color;
+    margin-bottom: 40px;
+    z-index: 1;
+  }
+
+  div {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: rgba($color: #000000, $alpha: 0.6);
+  //   z-index: -1;
+  // }
+}
+
+.home_welcome_background-7 {
+  background-color: rgba(0, 0, 0, 0.185);
+  position: relative;
+  z-index: 2;
+}
+
+.welcome_img-7 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.home_welcome_first_patern-7 {
+  // background-image: url("/images/home/Ellipse 15.png");
+  // background-position: center;
+  // background-repeat: no-repeat;
+}
+
+@include desktop {
+  .home_patern_img-7 {
+    // background-image: url("/images/home/Group 552.png");
+    // background-position: left;
+    // background-repeat: no-repeat;
+  }
+
+  .welcome_second_patern-7 {
+    background-image: url("/images/home/Group 549.png");
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+
+.wellcome_home_img-7 {
+  @include desktop {
+    transform: translate(15px, -40px);
+  }
+
+  @include tablet {
+    transform: translate(25px, 0px);
+  }
+
+  @include mobile {
+    transform: translate(45px, -50px);
+  }
+}
+
+.welcome_back-7 {
+  background-image: url("/images/home/welcome-porsche-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.get_fast_back-7 {
+  background-image: url("/images/home/randalls.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+.welcome_to {
+  @include all_fonts_styles(20px, $fw-bold, inherit, #000);
+  line-height: 1.2em;
+
+  @include tablet {
+    @include all_fonts_styles(20px, $fw-bold, inherit, #fff);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(18px, $fw-bold, inherit, #fff);
+  }
+}
+
+.welcome_title-7 {
+  @include all_fonts_styles(31px, $fw-bold, inherit, #000);
+  line-height: 1.2em;
+  letter-spacing: 2px;
+
+  @include tablet {
+    @include all_fonts_styles(20px, $fw-bold, inherit, #fff);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(18px, $fw-bold, inherit, #fff);
+  }
+}
+
+.welcome_text-7 {
+  @include all_fonts_styles(18px, $fw-normal, inherit, #000);
+  line-height: 36px;
+
+  @include tablet {
+    color: #fff;
+  }
+  @include mobile {
+    color: #fff;
+  }
+}
+
+.home-welcome_txt-7 {
+  @include all_fonts_styles(18px, $fw-bold, $main-font, $black-color);
+}
+
+.get_fast_title-7 {
+  @include all_fonts_styles(40px, $fw-normal, $main-font, $white-color);
+
+  @include tablet {
+    @include all_fonts_styles(32px, $fw-normal, $main-font, $white-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(30px, $fw-normal, $main-font, $white-color);
+  }
+}
+
+.get_fast_text-7 {
+  @include all_fonts_styles(21px, $fw-bold, $main-font, $white-color);
+}
+
+.get_fast_div__container-7 {
+  position: relative;
+  z-index: 100;
+  background-color: transparent;
+}
+
+.get_approved-7 {
+  background-image: url("/images/home/approved_back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.get_approved_text_back-7 {
+  background-color: #47a201bf;
+  border-radius: 15px;
+}
+
+// .home_welcome-txt_container-7{
+//   // position: absolute;
+//   background: transparent
+//     linear-gradient(
+//       108deg,
+//       #0e050ae6 0%,
+//       #000000c2 51%,
+//       #cc06063d 86%,
+//       #0e050a94 100%
+//     )
+//     0% 0% no-repeat padding-box;
+//   // @include tablet {
+//   //   top: 50%;
+//   //   transform: translateY(-50%);
+//   //   left: 50%;
+//   //   transform: translateX(-50%);
+//   // }
+//   // @include mobile {
+//   //   left: 50%;
+//   //   transform: translateX(-50%);
+//   // }
+// }
+// .home_welcome-txt_container-7 {
+//   @include mobile {
+//     background-color: rgba(0, 0, 0, 0.515);
+//   }
+//   @include tablet {
+//     background-color: rgba(0, 0, 0, 0.515);
+//   }
+// }
+
+.home_welcome_img_style-7 {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.ba_img_handler-7 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.ba_img_handler-welcome {
+  @include xldesktop {
+    background: #fff;
+    background-image: none !important;
+  }
+  @include desktop {
+    background: #fff;
+    background-image: none !important;
+  }
+  background-image: url("/images/home/welome-bg.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.red_button {
+  background-color: $main-color;
+  color: #fff;
+  border-radius: 0px !important;
+  @include all_fonts_styles(18px, 600, system-ui, $white-color);
+  @include mobile {
+    @include all_fonts_styles(14px, 600, system-ui, $white-color);
+  }
+
+  &:hover {
+    color: $second-blue-color;
+    background-color: $main-color;
+  }
+}
+.special-title_main {
+  @include all_fonts_styles(30px, $fw-bold, $main-font, $black-color);
+
+  @include tablet {
+    @include all_fonts_styles(25px, $fw-bold, $main-font, $black-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(25px, $fw-bold, $main-font, $black-color);
+  }
+}
+.scale_hover_sistem {
+  transform: scale(1);
+  transition: all 200ms ease-in-out;
+}
+.scale_hover_sistem:hover {
+  transition: all 200ms ease-in-out;
+  transform: scale(1.05);
+}
+.home-welcome_txt {
+  @include all_fonts_styles(18px, $fw-bold, $main-font, $black-color);
+}
+.home_minivans_caontainer {
+  background-image: url("/images/home/welcome-volkswagen-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+.quick_cover {
+  position: relative;
+  z-index: 3;
+}
+.bg-quick-search {
+  background-color: $main-color;
+}

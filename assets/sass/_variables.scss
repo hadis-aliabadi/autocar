@@ -1,0 +1,90 @@
+//colors
+$white-color: #ffffff;
+$light-black-color: #1c252b;
+$x-light-black-color: #283037;
+$x-dark-gray-color: #1e3848;
+$xx-dark-gray-color: #1d252c;
+$dark-gray-color: #4b5359;
+// $gray-color: #40474d;
+// $x-gray-color: #707070;
+$xx-gray-color-alfa: 0.1;
+$xxx-gray-color-alfa: 0.2;
+$xxxx-gray-color-alfa: 0.05;
+$xx-gray-color: rgba($white-color, $xx-gray-color-alfa);
+$xxx-gray-color: rgba($white-color, $xxx-gray-color-alfa);
+$xxxx-gray-color: rgba($white-color, $xxxx-gray-color-alfa);
+$light-gray-color: #545a5f;
+$xx-light-gray-color: #adcad6;
+$dark-blue-color: #354c5b;
+$x-dark-blue-color: #1e3848;
+$blue-color: #3c91e6;
+$light-blue-color: #3e92cc;
+$light-red-color: #ff331f;
+$red-color: #e74c3c;
+$yellow-color: #f9e215;
+//new colors
+$gray-color: #646464;
+$x-gray-color: #738089;
+$x-light-gray: #e8eef3;
+$dark-black-color: #262f38;
+
+$black-color: #000;
+$medium-blue-color: #024a9b;
+$x-mdedium-blue-color: #254ef4;
+$x-light-blue-color: #e8eef3;
+$light-blue-color: #d0dce7;
+
+//newer colors
+$main-color: #e74c3c;
+$second-blue-color: #e74c3c;
+$second-color: #242424;
+$gray: #303030; //*
+$third-color: #f7f7f7;
+$main-font: "Open Sans";
+$second-font: "Oswald";
+
+$text-color: #4a4a4a;
+$header-text-color: #000;
+$black-text-color: #050f19;
+$second-color: #4a4a4a;
+$main-hover-color: #e74c3c;
+$main-gray-color: #a3a3a321;
+$light-gray-color: #f8f9fa;
+$header_tags_color: #ce1431;
+$light-gray: #f6fbff;
+$header-background-gray: #f9f8f6;
+$dark-md-black: #363737;
+$dark-bckground-text: #2a2b2b;
+$light-background-text-input: #f4f4f4;
+
+//font size
+$fs-xxs: 0.625rem; //10px
+$fs-xs: 0.75rem; //12px
+$fs-sm: 0.875rem; //14px
+$fs-md: 1rem; //16px
+
+$fs-xmd: 1.125rem; //18px
+$fs-txmd: 0.9375rem; //15px
+//$fs-mxmd: 0.75rem; //18px
+$fs-mlg: 1.875rem; //30px
+$fs-tmlg: 1.6875rem; //27px
+$fs-mmlg: 1.5rem; //24px
+
+$fs-xxmd: 1.25rem; //20px
+$fs-xxxxmd: 1.375rem; //22px
+$fs-xl: 1.5625rem; //25px
+$fs-xxxmd: 1.75rem; //28px
+$fs-xxxl: 2.125rem; //34px
+$fs-mxl: 2.5rem; //30px
+$fs-xmxl: 3.125rem; //50px
+$fs-xxl: 4.375rem; //70px
+$fs-xxxxl: 5rem; //80px
+$fs-xxxxxl: 6rem; //120px
+//font weight
+$fw-light: 300;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-extrabold: 700;
+$fw-black: 800;
+$fw-bold: 900;

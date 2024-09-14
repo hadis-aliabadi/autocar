@@ -1,0 +1,228 @@
+.home_inevntpry_search_div__container {
+  // background-color: $light-black-color;
+}
+
+.home_inevntpry_search_div__content_container {
+  background-color: #2f2f2f;
+  border-radius: 8px;
+}
+
+.title_text {
+  @include all_fonts_styles($fs-mxl, $fw-bold, $main-font, #bdbdbd);
+}
+
+.home_pooster_h5__text {
+  text-shadow: 0 2px 2px rgb(0 0 0 / 33%);
+
+  letter-spacing: 4px;
+  @include xldesktop {
+    @include all_fonts_styles($fs-xmxl, 400, $second-font, #fff);
+  }
+
+  @include desktop {
+    @include all_fonts_styles($fs-mxl, 400, $second-font, #fff);
+  }
+
+  @include tablet {
+    @include all_fonts_styles($fs-xxxmd, 400, $second-font, #fff);
+  }
+
+  @include mobile {
+    @include all_fonts_styles($fs-xxmd, 400, $second-font, #fff);
+  }
+
+  >span {
+    @include xldesktop {
+      @include all_fonts_styles($fs-xxl, 500, $second-font, #fff);
+    }
+
+    @include desktop {
+      @include all_fonts_styles($fs-xmxl, 500, $second-font, #fff);
+    }
+
+    @include tablet {
+      @include all_fonts_styles($fs-mxl, 500, $second-font, #fff);
+    }
+
+    @include mobile {
+      @include all_fonts_styles($fs-xxxmd, 500, $second-font, #fff);
+    }
+  }
+}
+
+.home_pooster_p__text {
+  @include xldesktop {
+    @include all_fonts_styles($fs-md,
+      $fw-normal,
+      $main-color,
+      rgba(255, 255, 255, 0.7));
+  }
+
+  @include desktop {
+    @include all_fonts_styles($fs-md,
+      $fw-normal,
+      $main-color,
+      rgba(255, 255, 255, 0.7));
+  }
+
+  @include tablet {
+    @include all_fonts_styles($fs-sm,
+      $fw-normal,
+      $main-color,
+      rgba(255, 255, 255, 0.7));
+  }
+
+  @include mobile {
+    @include all_fonts_styles($fs-xs,
+      $fw-normal,
+      $main-color,
+      rgba(255, 255, 255, 0.7));
+  }
+}
+
+.home_inevntpry_search_button__search {
+  @include orange_botton();
+  background-color: transparent;
+  border-radius: 0px;
+  height: 45px !important;
+  // border: 1px solid #aba9a9;
+  flex-wrap: nowrap;
+  @include all_fonts_styles(14px, $fw-normal, $main-color, #fff);
+
+  @include mobile {
+    @include all_fonts_styles(16px, $fw-normal, $main-color, #fff);
+  }
+&--inventory{
+  height: initial !important;
+
+}
+  &:hover {
+    @include all_fonts_styles(14px, $fw-normal, $main-color, $white-color);
+    background-color: $second-blue-color;
+    border: 1px solid $second-blue-color;
+
+    @include mobile {
+      @include all_fonts_styles(16px, $fw-normal, $main-color, $white-color);
+    }
+  }
+}
+
+
+
+
+
+.border_column {
+  border-right: 1px solid #000;
+
+  @include mobile {
+    border: none;
+  }
+}
+
+.border_bottom {
+  border-bottom: 1px solid #c6c6c6;
+
+  @include tablet {
+    border: none;
+  }
+
+  @include mobile {
+    border: none;
+  }
+}
+
+.home_search_input-style {
+  border: 1px solid #000;
+  border-radius: 0px;
+  // background-color: #a4a3a3;
+  color: #000;
+  position: relative;
+  top: 0;
+  z-index: 5;
+
+  &::placeholder {
+    color: #000; //hsla(0, 0%, 74%, 0.611);
+    background-image: url("/icons/search(2).png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 5px 3px;
+    transition: 0.3s;
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid #000;
+    background-image: none !important;
+  }
+}
+
+.search_input_home_patern {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30%;
+  width: 1px;
+  z-index: 5;
+  background-color: $white-color;
+}
+
+.result-input-simple-search {
+  background-color: #fff;
+  color: #000;
+}
+
+.home_search_options-style {
+  color: $black-color;
+
+  &:hover {
+    color: $black-color;
+  }
+}
+
+@include desktop {}
+
+@include tablet {}
+
+@include mobile {}
+
+
+.filter-input-container {
+  height: 138px;
+  transition: all 0.3s;
+  .size-1 {
+    width: 20% !important;
+    padding: 10px 0;
+
+    @include tablet {
+      width: 25% !important;
+    }
+
+    @include mobile {
+      width: 50% !important;
+    }
+  }
+
+  @include tablet {
+    height: 280px;
+  }
+
+  @include mobile {
+    height: 420px;
+  }
+}
+.advance-filter__title{
+
+  font-weight: bold;
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+
+.home__search-div{
+  background-color: #3a3a3a;
+}

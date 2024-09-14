@@ -1,0 +1,32 @@
+.vehicle_single_detail_div__container {
+  @include all_fonts_styles(16px, $fw-normal, $main-font, #000);
+  // border-bottom: 1px solid #bcc5dc;
+  height: 1.75rem;
+
+  @include mobile {
+    height: 2rem;
+    font-size: 10px;
+  }
+  @include tablet {
+    height: 2rem;
+    font-size: 14px;
+  }
+
+  span {
+    @include text-line-limit;
+
+    &:first-child {
+      font-weight: 500 !important;
+    }
+  }
+
+  &:nth-child(even) {
+    background-color: #f3f3f3 !important;
+  }
+}
+
+.vehicle_single_detail_change_div__container {
+  @include mobile {
+    height: 2.5rem;
+  }
+}

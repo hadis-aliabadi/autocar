@@ -1,0 +1,27 @@
+export const INITIAL_VALUES = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  make: "",
+  model: "",
+  year: "",
+  // vin_number: "",
+  orderNo: "",
+  comment: "",
+  requested_date: "",
+  // comments: "",
+};
+// export const initialValues = {
+//     firstName: "",
+//     lastName: "",
+//     email: "",
+//     phone: "",
+//     make: "",
+//     model: "",
+//     year: "",
+//     vin: "",
+//     orderNo: "",
+//     comments:"",
+//     part_detail:[],
+// }

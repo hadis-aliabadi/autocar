@@ -1,0 +1,21 @@
+.footer_privacy__text {
+  @include all_fonts_styles($fs-xxmd, $fw-medium, $main-font, $white-color);
+}
+
+@include desktop {
+  .footer_privacy__text {
+    @include all_fonts_styles($fs-xxmd, $fw-medium, $main-font, $white-color);
+  }
+}
+
+@include tablet {
+  .footer_privacy__text {
+    @include all_fonts_styles($fs-md, $fw-medium, $main-font, $white-color);
+  }
+}
+
+@include mobile {
+  .footer_privacy__text {
+    @include all_fonts_styles($fs-md, $fw-medium, $main-font, $white-color);
+  }
+}

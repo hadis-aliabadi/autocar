@@ -1,0 +1,569 @@
+.swiper-pagination-active {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.swiper-pagination_rotate {
+  transform: rotate(360deg);
+  transition: all 0.5s;
+  transition-delay: 250ms;
+}
+.DetaileProductCustomrWeb-slider-make {
+  // background-color: $white-color !important;
+  // margin-top: 1rem !important;
+}
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  opacity: 1 !important;
+}
+
+.image-gallery-thumbnail {
+  opacity: 1;
+  width: 180px;
+}
+
+.image-gallery {
+  width: 100%;
+  // min-width: 700px;
+  height: auto;
+}
+
+.image-gallery-thumbnails-wrapper.thumbnails-swipe-horizontal {
+  // padding: 1rem;
+}
+
+.DetaileProductCustomrWeb-title {
+  @include all_fonts_styles(24px, 700, $main-font, $white-color);
+  h2 {
+    @include all_fonts_styles(24px, 700, $main-font, $white-color);
+  }
+}
+
+.DetaileProductCustomrWeb-price {
+  // @include all_fonts_styles(30px, 700, $main-font, $orange-color);
+}
+
+.DetaileProductCustomrWeb-description-text {
+  @include all_fonts_styles(14px, 400, $main-font, #000);
+  text-align: start !important;
+  letter-spacing: 7%;
+}
+
+@media screen and (min-width: 1440px) {
+  .image-gallery-slide img {
+    width: 100%;
+    // min-width: 700px;
+    // height: auto;
+    max-height: 150vh;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center center;
+  }
+
+  .fullscreen .image-gallery-slide img {
+    // max-height: 100vh;
+    height: auto;
+  }
+
+  .DetaileProductCustomrWeb-description {
+    color: #024a9b;
+    font-size: 28px;
+  }
+
+  .DetaileProductCustomrWeb-infrmation {
+    // padding-left: 2rem !important;
+    // margin-top: 7rem !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .image-gallery-slide img {
+    width: 100%;
+    // min-width: 700px;
+    // height: auto;
+    max-height: 150vh;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center center;
+  }
+
+  .fullscreen .image-gallery-slide img {
+    max-height: 100vh;
+  }
+
+  .DetaileProductCustomrWeb-description {
+    color: #024a9b;
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1200px) {
+  .image-gallery-slide img {
+    width: 100%;
+    // min-width: 700px;
+    // height: auto;
+    max-height: 150vh;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center center;
+  }
+
+  .fullscreen .image-gallery-slide img {
+    max-height: 100vh;
+  }
+
+  .DetaileProductCustomrWeb-description {
+    color: #024a9b;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+}
+
+@media screen and (min-width: 300px) and (max-width: 580px) {
+  .image-gallery-slide img {
+    width: 100%;
+    // min-width: 700px;
+    height: auto;
+    max-height: 150vh;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center center;
+  }
+
+  .fullscreen .image-gallery-slide img {
+    max-height: 100vh;
+  }
+
+  .DetaileProductCustomrWeb-description {
+    color: #024a9b;
+    font-size: 28px;
+  }
+
+  .DetaileProductCustomrWeb-infrmation {
+    p {
+      // display: flex;
+      // text-align: center !important;
+      // justify-content: center !important;
+      // align-items: center !important;
+    }
+
+    top: 2rem;
+    display: flex;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    // margin-top: 7rem !important;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 699px) {
+  .DetaileProductCustomrWeb-description {
+    color: #024a9b;
+    font-size: 28px;
+  }
+
+  .DetaileProductCustomrWeb-infrmation {
+    display: flex;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    // margin-top: 7rem !important;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 769px) {
+  .DetaileProductCustomrWeb-description {
+    color: #024a9b;
+    font-size: 28px;
+  }
+
+  .DetaileProductCustomrWeb-infrmation {
+    display: flex;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    // margin-top: 7rem !important;
+  }
+}
+
+.image-gallery-thumbnails-wrapper {
+  z-index: 3 !important;
+}
+
+.sold_out_image-styles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.Detaile__main {
+}
+
+.image-gallery-content.right .image-gallery-slide .image-gallery-image {
+  object-fit: cover !important;
+  height: auto !important;
+}
+
+.sold_out_image-styles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.gallery_slider_modal__div_container {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  z-index: 1000;
+}
+.gallery_slider_i_close_fullscreen__icon {
+  position: fixed;
+  top: 24%;
+  right: 1%;
+  color: $white-color;
+  cursor: pointer;
+  z-index: 55555555 !important;
+}
+.gallery_slider_nav_button__style {
+  @include desktop {
+    color: $white-color;
+    background-color: rgba(255, 255, 255, 0.212) !important;
+    border: none;
+    position: fixed;
+    top: 39% !important;
+    z-index: 1000;
+    border-radius: 5px;
+  }
+  @include xldesktop {
+    color: $white-color;
+    background-color: rgba(255, 255, 255, 0.212) !important;
+    border: none;
+    position: fixed;
+    top: 39% !important;
+    z-index: 99;
+    border-radius: 5px;
+  }
+  color: $white-color;
+  background-color: rgba(255, 255, 255, 0.212) !important;
+  border: none;
+  position: fixed;
+  top: 45% !important;
+  z-index: 1000;
+  border-radius: 5px;
+}
+.gallery_slider_nav_button__style_1 {
+  color: $white-color;
+  background-color: #e74c3c !important;
+  border: none;
+  bottom: 71% !important;
+  z-index: 99;
+  border-radius: 5px;
+}
+.gallery_slider_nav_button__style_1 {
+  color: $white-color;
+  background-color: transparent;
+  border: none;
+
+  bottom: 71% !important;
+  z-index: 99;
+}
+.gallery_slider_prev_button__style_1 {
+  left: 5px;
+  position: absolute;
+  height: 37px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.gallery_slider_prev_button__style {
+  left: 0;
+}
+.gallery_slider_next_button__style {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 37px;
+  right: 0;
+}
+
+// .inventory_soldImage-style {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// }
+
+.gallery_slider_div__img_content_container {
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px 0px 0px 8px;
+
+  &::after {
+    background: none !important;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // @include desktop {
+    //   max-height: 600px;
+    //   object-fit: cover;
+    // }
+    // @include xldesktop {
+    //   max-height: 300px;
+    //   object-fit: cover;
+    // }
+  }
+}
+
+.DetaileProductCustomrWeb-title {
+  @include all_fonts_styles(40px, 900, $main-font, $white-color);
+
+  @include tablet {
+    @include all_fonts_styles($fs-xl, 900, $main-font, $white-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles($fs-xxmd, 900, $main-font, $white-color);
+  }
+}
+
+.DetaileProductCustomrWeb-price {
+  @include all_fonts_styles($fs-sm, 400, $main-font, #1be7ff);
+}
+
+.gallery_slider_thmb__container {
+  cursor: pointer;
+
+  .gallery_slider_thmb_img__container {
+    position: relative;
+    border-radius: 8px 0px 0px 8px;
+    & > img {
+      // height: 2rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      // @include desktop {
+      //   max-height: 250px;
+      //   object-fit: cover;
+      // }
+      // @include xldesktop {
+      //   max-height: 400px;
+      //   object-fit: cover;
+      // }
+      // @include tablet {
+      //   max-height: 200px;
+      //   object-fit: cover;
+      // }
+    }
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background: linear-gradient(
+    //     180deg,
+    //     rgba($color: $dark-black-color, $alpha: 0.6) 0%,
+    //     rgba($color: $light-gray-color, $alpha: 0.6) 100%
+    //   );
+    // }
+
+    &:hover {
+      &::after {
+        background: none;
+      }
+    }
+  }
+}
+
+.gallery_slider_thmb_right_conrner__container {
+  border-top-left-radius: 0 !important;
+  // border-top-right-radius: 20px;
+}
+
+.gallery_slider_div__img_container {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery_slider_i_fullscreen__icon {
+  cursor: pointer;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  color: #ffffff;
+  // @include mobile {
+  //   bottom: 0px;
+  // }
+}
+
+.gallery_slider_modal__div_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  z-index: 1000;
+}
+
+.gallery_slider_i_close_fullscreen__icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: $white-color;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.gallery_slider_nav_button__style {
+  color: $white-color;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  top: 50%;
+  z-index: 10000;
+}
+
+.gallery_slider_prev_button__style {
+  left: 0;
+}
+
+.gallery_slider_next_button__style {
+  right: 0;
+  right: 5px;
+}
+
+.gallery_slider_thumbs_div__container {
+  overflow: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+    touch-action: pan-x;
+  }
+}
+
+.gallery_slider_thumb_image_div__container {
+  cursor: pointer;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    object-fit: cover;
+  }
+
+  &.active {
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+  }
+
+  transition: transform 0.3s ease;
+}
+
+.cardetail_button_container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: sticky;
+  top: 0%;
+  right: 0;
+  z-index: 0;
+  background-color: #fff;
+}
+
+.cardetail_phone_container {
+  position: fixed;
+  bottom: 10%;
+  left: 2%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  width: 70px;
+}
+
+.DetaileProductCustomrWeb-title {
+  @include all_fonts_styles(34px, 900, $main-font, #000);
+}
+
+.car_item_p__price_text {
+  color: #de1a1a;
+}
+
+.detail_item {
+  border: 1px solid #00000017;
+  height: 150px;
+  color: #000;
+}
+
+.image-gallery {
+  width: 100%;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+  height: 50px !important;
+  width: 30px !important;
+  top: 10rem !important;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  color: #000;
+  position: relative;
+  z-index: 2;
+  border: none !important;
+}
+
+.active_vehicle_option_accordian-open {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+  color: #000;
+}
+
+.detail_options-movment {
+  @include tablet {
+    & {
+      transform: translateX(60px);
+    }
+  }
+}
+
+.vehicle__option__background--div {
+  position: relative;
+  z-index: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  color: #000;
+}
+
+.carfax_style {
+  @include tablet {
+    width: 100% !important;
+  }
+  @include mobile {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,38 @@
+.get_fast_title {
+  @include all_fonts_styles(40px, $fw-normal, $main-font, $white-color);
+
+  @include tablet {
+    @include all_fonts_styles(32px, $fw-normal, $main-font, $white-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(30px, $fw-normal, $main-font, $white-color);
+  }
+}
+
+.get_fast_text {
+  @include all_fonts_styles(21px, $fw-bold, $main-font, $white-color);
+}
+
+.get_fast_div__container {
+  position: relative;
+  z-index: 100;
+  background-color: transparent;
+}
+.get_fast_back {
+  background-image: url("/images/home/finance-back.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}

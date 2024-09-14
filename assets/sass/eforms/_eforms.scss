@@ -1,0 +1,223 @@
+.eforms_div__container {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.eforms_input_container,
+.eforms_input_container:focus {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 2px !important;
+  height: 36px;
+  @include all_fonts_styles(13px, normal, $main-font, #000000);
+
+  &::placeholder {
+    @include all_fonts_styles(13px, normal, $main-font, #000000);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+.label_style {
+  @include all_fonts_styles(14px, $fw-normal, $main-font, #000);
+  margin: 0;
+}
+
+.eforms_input_container_footer {
+  border: none;
+  border-bottom: 2px solid #0d65bf;
+  background-color: #e3e3e3;
+  border-radius: 0 !important;
+  height: 34px;
+  @include all_fonts_styles($fs-sm, $fw-normal, $main-font, #000000);
+
+  &::placeholder {
+    opacity: 0.5;
+    @include all_fonts_styles($fs-sm, $fw-normal, $main-font, #000000);
+  }
+
+  &:disabled {
+    background-color: rgba($color: #0d65bf, $alpha: 0.5) !important;
+    color: #000000 !important;
+  }
+}
+
+textarea {
+  font-family: $main-font !important;
+}
+
+.eforms_textarea_container,
+.eforms_textarea_container:focus {
+  border-radius: 0 !important;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.eforms_textarea_container_footer {
+  border: none;
+  border-bottom: 2px solid #0d65bf;
+  background-color: #e3e3e3;
+  border-radius: 0 !important;
+  @include all_fonts_styles($fs-sm, $fw-normal, $main-font, #000);
+
+  &::placeholder {
+    opacity: 0.5;
+    @include all_fonts_styles($fs-sm, $fw-normal, $main-font, #000);
+  }
+
+  &:disabled {
+    background-color: rgba($color: #0d65bf, $alpha: 0.5) !important;
+    color: #000 !important;
+  }
+}
+.eforms_input_select_container_inventory,
+.eforms_input_select_container_inventory:focus {
+  border: 1px solid #ffff;
+  background-color: transparent;
+  border-radius: 5px !important;
+  height: 38px;
+  @include all_fonts_styles($fs-xmd, $fw-normal, $main-font, #f1f1f1);
+
+  &::placeholder {
+    opacity: 0.5;
+    @include all_fonts_styles(12px, $fw-normal, $main-font, #f1f1f1);
+    white-space: nowrap;
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+.advance-form-style {
+  @include all_fonts_styles(13px, normal, $main-font, #fff);
+  
+}
+
+.eforms_input_select_container,
+.eforms_input_select_container:focus {
+  // border: 1px solid #0d65bf;
+  background-color: #e4e4e4;
+  border-radius: 0 !important;
+  height: 38px;
+  @include all_fonts_styles($fs-xmd, $fw-normal, $main-font, #868d9d);
+
+  &::placeholder {
+    opacity: 0.5;
+    @include all_fonts_styles($fs-xmd, $fw-normal, $main-font, #868d9d);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+
+@include desktop {
+  .eform_h4__form_header {
+    @include all_fonts_styles(1.875rem, 400, Roboto, #fff);
+  }
+}
+
+@include tablet {
+  .eform_h4__form_header {
+    @include all_fonts_styles(1.775rem, 400, Roboto, #fff);
+  }
+}
+
+@include mobile {
+  .eform_h4__form_header {
+    @include all_fonts_styles(1.775rem, 400, Roboto, #fff);
+  }
+}
+
+.modal_close_button__style {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: $black-color;
+}
+
+.eforms_header_img__container {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 30px #00000029;
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.eform_form_header_div__conatiner {
+  @include all_fonts_styles(16px, 700, $main-font, #000);
+
+  @include mobile {
+    & {
+      font-size: 16px;
+    }
+  }
+}
+
+.modal {
+  z-index: 555555;
+}
+.eforms_calculator_container {
+  border: 1px solid #d2d2d2;
+}
+.eforms_calculator_header {
+  background-color: #d9d9d9;
+  color: #000000 !important;
+}
+
+.eforms_calculator_icons {
+  background-color: #ccc;
+  border-radius: 0px 5px 5px 0px;
+  color: #333333;
+  height: 37px;
+}
+.eform_contact_container {
+  @include desktop {
+    height: 600px;
+  }
+  background-color: #f5f5f5;
+}
+.eform_contact_container_top {
+  @include desktop {
+    height: 600px;
+  }
+  top: -140px;
+  z-index: 10;
+  background-color: #f5f5f5;
+  position: relative;
+  @include mobile {
+    top: 0;
+  }
+  @include tablet {
+    top: 0;
+  }
+}
+
+.calc-reset {
+  color: #505050;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: $main-font;
+}
+
+.calc-payment {
+  font-family: $main-font;
+  font-weight: 700;
+  color: #262425;
+  font-size: 14px;
+}
+
+.calc-input-soms {
+  color: #000;
+  font-size: 14px;
+}
+.finance_us_title {
+  @include all_fonts_styles(14px, $fw-normal, $main-font, #000);
+}

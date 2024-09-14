@@ -1,0 +1,30 @@
+.back_contact {
+  background-image: url("/images/home/contact-back.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.label_style_home {
+  @include all_fonts_styles(16px, 600, $main-font, #fff);
+  letter-spacing: 1px;
+}
+
+.sp-home {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: rgb(0,0,0);
+background: linear-gradient(270deg, rgba(0,0,0,0.31976540616246496) 39%, rgba(0,0,0,1) 96%);
+  top: 0;
+  left: 0;
+  @include tablet {
+    width: 100%;
+
+  }
+  @include mobile {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,93 @@
+.eform_finance_modal_div__container {
+  position: relative;
+  @include all_fonts_styles($fs-md, $fw-normal, $main-font, $white-color);
+  background-color: #fff;
+  height: 5rem;
+}
+
+.eform_finance_modal_img__container {
+  position: absolute;
+  bottom: -20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.features_title {
+  @include xldesktop {
+    @include all_fonts_styles($fs-mlg, 700, inherit, #000);
+  }
+
+  @include desktop {
+    @include all_fonts_styles($fs-mmlg, 700, inherit, #000);
+  }
+
+  @include tablet {
+    @include all_fonts_styles($fs-xxmd, 700, inherit, #000);
+  }
+
+  @include mobile {
+    @include all_fonts_styles($fs-xxmd, 700, inherit, #000);
+  }
+}
+
+.modal-dialog {
+  max-width: 85% !important;
+  @include mobile {
+    max-width: 100% !important;
+  }
+}
+
+.finance_title {
+  @include all_fonts_styles($fs-xxxxl, $fw-normal, $main-font, #232c43);
+}
+
+.btn_finance {
+  background-color: $white-color;
+  border: 1px solid #bcc5dc;
+  color: $black-color;
+  position: relative;
+  z-index: 1;
+  width: 220px;
+  height: 300px;
+
+  &:hover {
+    background-color: #e9d972;
+    border: none;
+    border-radius: 13px;
+    color: $white-color;
+  }
+
+  &:focus {
+    background-color: #e9d972;
+    border: none;
+    border-radius: 13px;
+    color: $white-color;
+    outline: none;
+  }
+}
+
+.selectbtn {
+  background-color: #e9d972;
+  border: none;
+  // border-radius: 13px;
+  color: $white-color;
+  outline: none;
+}
+
+.eform_modal_checkbox_div__style {
+  width: 20px;
+  height: 20px;
+  background-color: $xx-gray-color;
+  border: 0.1px solid $xxx-gray-color;
+  border-radius: 3px;
+  color: $yellow-color;
+}
+.option_item_style {
+  border-bottom: 1px dashed #ddd;
+  @include all_fonts_styles(12px, 400, $main-font, #000);
+}
+.size-nav {
+  max-height: 560px;
+}

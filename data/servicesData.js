@@ -1,0 +1,68 @@
+export const servicesData = [
+  {
+    title: "Exhaust & Muffler Repairs",
+    subTitle: "Explore Our Wide Range of Vehicles",
+    icon: "",
+    btnName: "Book Appointment",
+    link: "/forms/service-appointment",
+    image: "/images/bodyshop/Exus.jpg",
+  },
+  {
+    title: "Auto Detailing",
+    subTitle: "Have Questions? Reach Out to Us",
+    icon: "",
+    btnName: "Book Appointment",
+    link: "/forms/service-appointment",
+    image: "/images/bodyshop/deataling.jpg",
+  },
+  {
+    title: "Alignments",
+    subTitle: "Benefit from low-interest rates on your auto loan. ",
+    icon: "",
+    btnName: "Book Appointment",
+    link: "/forms/service-appointment",
+    image: "/images/bodyshop/pbxmotors-Performance Upgrade-service.webp",
+  },
+
+  {
+    title: "Engine & Electrical Diagnostics",
+    subTitle: "Find Your Dream Car with Easy Financing",
+    icon: "",
+    btnName: "Book Appointment",
+    link: "/forms/service-appointment",
+    image: "/images/bodyshop/Engine.webp",
+  },
+  {
+    title: "Wheels & Tires",
+    subTitle: "Explore Our Wide Range of Vehicles",
+    icon: "",
+    btnName: "Book Appointment",
+    link: "/forms/service-appointment",
+    image: "/images/bodyshop/Tier.jpg",
+  },
+  {
+    title: "Tune-ups",
+    subTitle: "Have Questions? Reach Out to Us",
+    icon: "",
+    btnName: "Book Appointment",
+    link: "/forms/service-appointment",
+    image: "/images/bodyshop/tune.jpg",
+  },
+  {
+    title: "Suspension & Brakes",
+    subTitle: "Benefit from low-interest rates on your auto loan. ",
+    icon: "",
+    btnName: "Book Appointment",
+    link: "/forms/service-appointment",
+    image: "/images/bodyshop/Suspension & Brakes.jpg",
+  },
+
+  {
+    title: "Transmission Service",
+    subTitle: "Find Your Dream Car with Easy Financing",
+    icon: "",
+    btnName: "Book Appointment",
+    link: "/forms/service-appointment",
+    image: "/images/bodyshop/transmission.jpg",
+  },
+];

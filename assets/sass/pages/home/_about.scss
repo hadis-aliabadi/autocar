@@ -1,0 +1,119 @@
+.iSHIRI {
+  background-color: $main-color !important;
+  bottom: 3.25rem !important;
+  right: 0.875rem !important;
+}
+.bCJyQM {
+  background-color: $main-color !important;
+  bottom: 3.25rem !important;
+  right: 0.875rem !important;
+}
+.ezefRO {
+  background-color: $main-color !important;
+  bottom: 3.25rem !important;
+  right: 0.875rem !important;
+}
+.dBqhJy {
+  background-color: $main-color !important;
+  bottom: 3.25rem !important;
+  right: 0.875rem !important;
+}
+
+.direction_title {
+  @include all_fonts_styles(21px, 700, inherit, #000);
+}
+
+// .text_limit_google_review-desc {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   display: -webkit-box;
+//   // line-height: 16px; /* fallback */
+//   // max-height: 32px; /* fallback */
+//   -webkit-line-clamp: 4; /* number of lines to show */
+//   -webkit-box-orient: vertical;
+//   line-height: 1.5;
+//   text-align: start;
+//   color: rgb(0, 0, 0);
+//   @include all_fonts_styles(15px, $fw-normal, $main-color, rgb(0, 0, 0));
+// }
+
+.swiper-container {
+  background-color: transparent !important;
+  div {
+    span {
+      z-index: 1 !important;
+    }
+  }
+}
+
+.title-review-tt {
+  @include all_fonts_styles(18px, normal, $main-color, rgb(0, 0, 0));
+}
+
+.about_image {
+  height: 370px;
+  object-fit: cover;
+  @include mobile {
+    height: 240px;
+  }
+}
+
+.welcome_back {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.text_div__container {
+  position: relative;
+  z-index: 100;
+  // background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  @include mobile {
+    width: 100% !important;
+    margin: auto !important;
+  }
+  @include tablet {
+    width: 100% !important;
+  }
+}
+
+.border-lg-right {
+  border-right: 1px solid #fff;
+  @include mobile {
+    border: none !important;
+  }
+  @include tablet {
+    border: none !important;
+  }
+}
+
+.about_title {
+  @include all_fonts_styles(17px, 700, $main-color, $white-color);
+  margin-bottom: 10px;
+
+  line-height: 18px;
+  min-height: 20px;
+}
+
+.about_text {
+  @include all_fonts_styles(15px, 500, $main-color, $white-color);
+}
+
+.icon_style {
+  background: #ec7211;
+  text-align: center;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.home-notice{
+  background-color: #ca1515;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  @include mobile{
+    font-size: 25px;
+  }
+}

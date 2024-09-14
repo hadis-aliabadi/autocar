@@ -1,0 +1,65 @@
+.Testimonials_limit {
+  overflow: hidden;
+  height: 465px;
+}
+.coverflow_slider_div__container {
+  position: relative;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #eeeeee, transparent);
+  min-height: 280px;
+  overflow: hidden;
+
+  & > div {
+    border-radius: 10px;
+    background-color: #666666;
+    min-height: 280px;
+  }
+}
+
+.coverflow_slider_h3__style {
+  @include all_fonts_styles(22px, 500, inherit, $white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coverflow_slider_p__style {
+  @include all_fonts_styles($fs-md, $fw-normal, inherit, $white-color);
+  text-align: center;
+}
+
+.coverflow_slider_p__style_limit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  padding: 20px auto !important;
+}
+
+.coverflow_slider_email_span__style {
+  @include all_fonts_styles($fs-md, $fw-medium, inherit, $white-color);
+}
+
+.coverflow_slider_email_title_span__style {
+  color: $yellow-color;
+}
+
+.coverflow_slider_image_img__container {
+  position: absolute;
+  top: -50px;
+  @include hexagon_generator($yellow-color, 115px, 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coverflow_slider_image_img__style {
+  width: 100px;
+  height: 85px;
+  object-fit: cover;
+  @include hexagon_generator($black-color, 100px, 85px);
+  overflow: hidden;
+}

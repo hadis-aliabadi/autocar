@@ -1,0 +1,78 @@
+/* Bouncy Animation Keyframes */
+@keyframes bounceIn {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* WhatsApp Icon for Desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 20px;
+  background-color: $main-color;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp_float:hover {
+  background-color: $main-color;
+  animation: bounceIn 0.5s;
+  color: white;
+}
+
+/* WhatsApp Popup for Desktop */
+.whatsapp_popup {
+  position: fixed;
+  max-width: 200px;
+  bottom: 90px;
+  right: 70px;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 20px;
+  border-end-end-radius: 0;
+  text-align: left;
+  font-size: 17px;
+  line-height: 1;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp_popup.show,
+.whatsapp_float:hover + .whatsapp_popup {
+  opacity: 1;
+  transform: translateY(0);
+  animation: bounceIn 0.5s;
+}
+
+/* WhatsApp Icon for Mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp_float {
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,56 @@
+.special_cars_img__container {
+  & > img {
+    max-width: 300px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.special_cars_img__container_swiper {
+  background-color: #fff;
+
+  & > img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+}
+
+.special_cars_detail_div__style {
+  @include all_fonts_styles($fs-md, $fw-semibold, $main-font, #0d65bf);
+}
+
+.special_cars_detail_price__style {
+  @include all_fonts_styles($fs-sm, $fw-normal, $main-font, #464646);
+}
+
+.special_cars_detail_km__style {
+  @include all_fonts_styles($fs-sm, $fw-normal, $main-font, #979797);
+}
+.style-special-title {
+  @include text_line_limit(2);
+  p {
+    @include all_fonts_styles(16px, 700, "-apple-system", #000);
+    @include desktop {
+      @include all_fonts_styles(14px, 700, "-apple-system", #000);
+    }
+  }
+}
+
+.inventory-banner {
+  background-image: url("/images/banners/inventory.webp");
+  @include all_fonts_styles(20px, 700, $main-font, #fff);
+  text-shadow: 1px 3px 0 #000, 1px 1px 5px #000,
+    0px 0px 15px rgba(255, 255, 255, 0);
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+
+  aspect-ratio: 19/3;
+
+  @include tablet {
+    aspect-ratio: 19/6;
+  }
+  @include mobile {
+    aspect-ratio: 39/19;
+  }
+}

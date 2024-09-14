@@ -1,0 +1,30 @@
+.home_search_input-style {
+  position: relative;
+  background-color: rgba($color: $white-color, $alpha: 0.9) !important;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #fff;
+
+  &::placeholder {
+    color: #9e9e9e;
+  }
+
+  &:focus {
+    outline: 1px solid $light-blue-color;
+  }
+}
+
+.result-input-simple-search {
+  position: absolute;
+  max-height: 250px;
+  top: 3rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  z-index: 100;
+  border: 1px solid $light-blue-color;
+  color: #000
+}
+
+.home_search_options-style {
+  color: #000
+}

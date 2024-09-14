@@ -1,0 +1,173 @@
+.ui_compare {
+  border-right: 1px solid #000;
+  &:last-child {
+    border-right: 0px solid #000;
+  }
+  h5 {
+    min-height: 4.5rem !important;
+  }
+}
+.table_style {
+  border: 1px solid #262425;
+  p {
+    color: #fff;
+  }
+}
+.table_style_header {
+  border: 1px solid #262425;
+}
+.style_header {
+  background-color: #262425;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table_style_title {
+  // border-bottom: 1px solid #000;
+  border-right: 1px solid rgb(255, 255, 255);
+}
+.tab_title {
+  color:#fff;
+  font-weight: 400;
+  @include tablet {
+    overflow-x: scroll;
+  }
+  @include desktop {
+    overflow-x: scroll;
+  }
+  @include mobile {
+    overflow-x: scroll;
+  }
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  font-weight: 600 !important;
+  // border-color: rgb(128, 128, 128) !important;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  color: $black-color;
+}
+.nav-tabs {
+  border-bottom: 1px solid $second-blue-color !important;
+}
+.nav-tabs .nav-link {
+  color: rgba($color: #fff, $alpha: 1);
+  background-color: $second-blue-color;
+  padding: 5px !important;
+  font-size: 14px;
+}
+.tabel_scroll {
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    // border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $main-color;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $main-color;
+  }
+}
+.with_image_compare {
+  @include xldesktop {
+    width: 75%;
+  }
+  @include desktop {
+    width: 75%;
+  }
+  @include tablet {
+    width: 75%;
+  }
+  @include desktop {
+    width: 75%;
+  }
+}
+.mobile_title_responsive {
+  @include mobile {
+    font-size: 19px;
+  }
+}
+.vehicle_options_toggle_span__style_compare {
+  @include all_fonts_styles(14px, 500, inherit, #ffffff);
+  @include mobile {
+    @include all_fonts_styles(11px, 500, inherit, #ffffff);
+  }
+}
+
+.make_style {
+  @include all_fonts_styles(16px, 400, inherit, #fff);
+
+  @include mobile {
+    @include all_fonts_styles(17px, 500, inherit, #fff);
+  }
+}
+
+.price_style_compare {
+  @include all_fonts_styles(24px, 700, inherit, #fff);
+}
+
+.odometer_style_compare {
+  @include all_fonts_styles(14px, 400, inherit, #fff);
+}
+.tax_style {
+  @include all_fonts_styles(13px, 400, inherit, #fff);
+}
+
+.special_details_style {
+  background: #262425;
+  border-bottom: 3px solid $main-color;
+}
+
+.row-head {
+  background-color: $main-color;
+  color: #fff;
+  padding: 10px;
+}
+
+.row-data {
+  padding: 5px;
+}
+.footer_tab_container {
+  .nav-tabs {
+    border-bottom: 1px solid $second-blue-color !important;
+    background-color: $second-blue-color !important;
+  }
+  .tabel_scroll {
+    overflow-x: hidden !important;
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      // border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $second-blue-color;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: $second-blue-color;
+    }
+  }
+}

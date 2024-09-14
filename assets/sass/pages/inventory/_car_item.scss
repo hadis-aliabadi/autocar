@@ -1,0 +1,385 @@
+.inventory_div__car_iamge_conatiner {
+  position: relative;
+  padding-left: 20px !important;
+  padding-bottom: 20px !important;
+
+  & > img {
+    z-index: 2;
+    max-width: 465px;
+    max-height: 228px;
+    object-fit: cover;
+  }
+}
+
+.inventory_soldImage-style {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.inventory_p__car_special {
+  @include all_fonts_styles(20px, $fw-medium, $second-font, #000);
+}
+
+.inventory_p__sellprice_line {
+  position: relative;
+  font-size: small !important;
+  color: red !important;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    transform: rotate(5deg) translateX(-50%) translateY(-50%);
+    background-color: red;
+  }
+}
+
+.inventory_a__title {
+  @include all_fonts_styles(25px, 700, $second-font, #000);
+  &:hover {
+    @include all_fonts_styles(25px, 700, $second-font, #000);
+  }
+}
+.inventory_a__title_2 {
+  @include all_fonts_styles(16px, 700, $second-font, #000);
+
+  &:hover {
+    @include all_fonts_styles(16px, 700, $second-font, #000);
+  }
+}
+
+@include xldesktop {
+  .inventory_p__price {
+    @include all_fonts_styles(19px, 700, $second-font, #000);
+  }
+  .inventory_p__price_2 {
+    @include all_fonts_styles(25px, 700, $second-font, #000);
+  }
+
+  .p__odometer {
+    @include all_fonts_styles(11px, $fw-medium, $second-font, #000);
+  }
+
+  .inventory_div__cell {
+    & > p:first-child {
+      white-space: nowrap;
+      @include all_fonts_styles(11px, $fw-normal, $main-font, #000000);
+    }
+
+    & > p:nth-child(2) {
+      @include all_fonts_styles(11px, 700, $main-font, #000000);
+    }
+  }
+
+  .inventory_p__car_special {
+    @include all_fonts_styles(20px, $fw-medium, $second-font, #000);
+  }
+}
+
+@include desktop {
+  .inventory_p__price {
+    @include all_fonts_styles(19px, 700, $second-font, #000);
+  }
+  .inventory_p__price_2 {
+    @include all_fonts_styles(25px, 700, $second-font, #000);
+  }
+  .p__odometer {
+    @include all_fonts_styles(11px, $fw-medium, $second-font, #000);
+  }
+
+  .inventory_div__cell {
+    & > p:first-child {
+      white-space: nowrap;
+      @include all_fonts_styles(11px, $fw-normal, $main-font, #000000);
+    }
+
+    & > p:nth-child(2) {
+      @include all_fonts_styles(11px, 700, $main-font, #000000);
+    }
+  }
+
+  .inventory_p__car_special {
+    @include all_fonts_styles(20px, $fw-medium, $second-font, #000);
+  }
+}
+
+@include tablet {
+  .inventory_p__price {
+    @include all_fonts_styles(19px, 700, $second-font, #000);
+  }
+  .inventory_p__price_2 {
+    @include all_fonts_styles(20px, 700, $second-font, #000);
+  }
+  .p__odometer {
+    @include all_fonts_styles(11px, $fw-medium, $second-font, #000);
+  }
+
+  .inventory_a__title {
+    @include all_fonts_styles(25px, 700, $second-font, #000);
+    &:hover {
+      @include all_fonts_styles(25px, 700, $second-font, #000);
+    }
+  }
+
+  .inventory_div__cell {
+    & > p:first-child {
+      white-space: nowrap;
+      @include all_fonts_styles(11px, $fw-normal, $main-font, #000000);
+    }
+
+    & > p:nth-child(2) {
+      @include all_fonts_styles(11px, 700, $main-font, #000000);
+    }
+  }
+
+  .inventory_p__car_special {
+    @include all_fonts_styles(20px, $fw-medium, $second-font, #000);
+  }
+}
+
+@include mobile {
+  .inventory_p__price {
+    @include all_fonts_styles(19px, 700, $second-font, #000);
+  }
+  .inventory_p__price_2 {
+    @include all_fonts_styles(18px, 700, $second-font, #000);
+  }
+  .p__odometer {
+    @include all_fonts_styles(11px, $fw-medium, $second-font, #000);
+  }
+
+  .inventory_a__title {
+    @include all_fonts_styles(25px, 700, $second-font, #000);
+    &:hover {
+      @include all_fonts_styles(25px, 700, $second-font, #000);
+    }
+  }
+
+  .inventory_div__cell {
+    & > p:first-child {
+      white-space: nowrap;
+      @include all_fonts_styles(11px, $fw-normal, $main-font, #000000);
+    }
+
+    & > p:nth-child(2) {
+      @include all_fonts_styles(11px, 700, $main-font, #000000);
+    }
+  }
+
+  .inventory_p__car_special {
+    @include all_fonts_styles(20px, $fw-medium, $second-font, #000);
+  }
+}
+
+.inventory_img {
+  object-fit: cover;
+
+  height: 250px;
+}
+
+.modal_title {
+  @include xldesktop {
+    @include all_fonts_styles(28px, $fw-normal, $second-font, #333333);
+  }
+
+  @include desktop {
+    @include all_fonts_styles(28px, $fw-normal, $second-font, #333333);
+  }
+
+  @include tablet {
+    @include all_fonts_styles(24px, $fw-normal, $second-font, #333333);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(20px, $fw-normal, $second-font, #333333);
+  }
+}
+
+.special_cars_detail_span__style {
+  position: absolute;
+  bottom: 0;
+  //transform: translateY(-98%);
+  min-height: 36px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.inventory_detail_text {
+  @include all_fonts_styles($fs-sm, $fw-normal, $second-font, #eeeeee);
+}
+
+.view_stack {
+  cursor: pointer;
+}
+.view_grid {
+  cursor: pointer;
+}
+.bg-photo {
+  background-color: #cccccc;
+  color: #fff;
+}
+.carItem_fixed_size_img {
+  // height: 340px;
+  width: 100%;
+  object-fit: cover;
+  @include mobile {
+    height: auto;
+  }
+  aspect-ratio: 4 / 3;
+}
+.paginationBttns {
+  list-style-type: none !important;
+  list-style: none !important;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  list-style-type: none;
+
+  & .next {
+    position: static;
+    transform: none;
+    font-size: 10px;
+    padding: 8px !important;
+  }
+
+  & .previousBttn {
+    position: static;
+    transform: none;
+    font-size: 8px;
+    list-style-type: none;
+  }
+
+  .previous {
+    // display: none;
+  }
+
+  & .paginationActive {
+    background-color: #bdc3c7;
+    color: #fff !important;
+
+    ::before {
+      content: "";
+    }
+  }
+
+  & > li {
+    margin-right: 5px;
+    padding: 5px 8px 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    color: #717374 !important;
+    font-size: 13px;
+    align-self: center;
+    list-style-type: none;
+
+    &::before {
+      width: 0 !important;
+      display: none;
+    }
+
+    &:hover {
+      background-color: #bdc3c7;
+    }
+
+    & a {
+      color: #717374;
+    }
+  }
+}
+.inventory_div__cell_2 {
+  & > p:first-child {
+    @include all_fonts_styles(10pt, $fw-normal, $main-font, #000000);
+  }
+
+  & > p:nth-child(2) {
+    @include all_fonts_styles(10pt, 600, $main-font, #000000);
+  }
+}
+.hover_red {
+  transition: 0.3s;
+  &:hover {
+    color: #bb0000;
+  }
+}
+.carfax_inventory {
+  max-width: 150px;
+}
+.car_item_p__price_text {
+  @include all_fonts_styles(20px, 700, $main-font, #000000);
+}
+
+.cart-item-wrapper {
+  display: block;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #606060;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 6%);
+  transition: all 0.3s ease;
+}
+
+//* Banner Ribbon
+.ribbon-wrapper {
+  width: 155px;
+  height: 188px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 4;
+  top: -3px;
+  left: -3px;
+  .ribbon {
+    font: bold 16px $main-font;
+    color: #333;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    position: relative;
+    padding: 10px 0;
+    top: 35px;
+    left: -40px;
+    width: 200px;
+    background-color: #e07a00;
+    color: rgb(255, 255, 255);
+  }
+  .ribbon-sold {
+    background-color: #d50000;
+  }
+  .ribbon-special-price {
+    background-color: #fff;
+    border: 1px solid $main-color;
+    color: $main-color;
+  }
+  .ribbon-pending,
+  .ribbon-comingsoon {
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+  }
+}
+
+.overly-ribbon-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  .ribbon-sold {
+    background-color: #fff5;
+    height: 100%;
+    text-align: center;
+    color: #d5000077;
+    font-weight: bolder;
+    font-size: 4rem;
+  }
+}

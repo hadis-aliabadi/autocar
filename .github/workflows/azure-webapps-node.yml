@@ -1,0 +1,36 @@
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and deploy Node.js app to Azure Web App - hzd-on-dreamfleet
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Node.js version
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      - name: npm install, build, and test
+        run: |
+          npm install
+          npm run build --if-present
+          npm run test --if-present
+
+      - name: 'Deploy to Azure Web App'
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'hzd-on-dreamfleet'
+          slot-name: 'Production'
+          publish-profile: <publishData><publishProfile profileName="hzd-on-dreamfleet - Web Deploy" publishMethod="MSDeploy" publishUrl="hzd-on-dreamfleet.scm.azurewebsites.net:443" msdeploySite="hzd-on-dreamfleet" userName="$hzd-on-dreamfleet" userPWD="G8SAFEfwdWcf9b8HfTilSjcYYGcgKxqfKbxgibPaPvuBlTAb2j4Y6yh6zLL0" destinationAppUrl="https://hzd-on-dreamfleet.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="https://portal.azure.com" webSystem="WebSites"><databases /></publishProfile><publishProfile profileName="hzd-on-dreamfleet - FTP" publishMethod="FTP" publishUrl="ftps://waws-prod-bay-159.ftp.azurewebsites.windows.net/site/wwwroot" ftpPassiveMode="True" userName="hzd-on-dreamfleet\$hzd-on-dreamfleet" userPWD="G8SAFEfwdWcf9b8HfTilSjcYYGcgKxqfKbxgibPaPvuBlTAb2j4Y6yh6zLL0" destinationAppUrl="https://hzd-on-dreamfleet.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="https://portal.azure.com" webSystem="WebSites"><databases /></publishProfile><publishProfile profileName="hzd-on-dreamfleet - Zip Deploy" publishMethod="ZipDeploy" publishUrl="hzd-on-dreamfleet.scm.azurewebsites.net:443" userName="$hzd-on-dreamfleet" userPWD="G8SAFEfwdWcf9b8HfTilSjcYYGcgKxqfKbxgibPaPvuBlTAb2j4Y6yh6zLL0" destinationAppUrl="https://hzd-on-dreamfleet.azurewebsites.net" SQLServerDBConnectionString="" mySQLDBConnectionString="" hostingProviderForumLink="" controlPanelLink="https://portal.azure.com" webSystem="WebSites"><databases /></publishProfile></publishData>'
+          package: .
