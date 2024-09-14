@@ -45,10 +45,10 @@ const HomePooster = (props) => {
           swiper.params.navigation.nextEl = nextref.current;
           swiper.navigation.update();
         }}
-        pagination={false}
-        autoplay={{
-          delay: 5000,
-        }}
+        pagination={true}
+        // autoplay={{
+        //   delay: 5000,
+        // }}
         slidesPerView={1}
       >
         {media?.map((item) => {

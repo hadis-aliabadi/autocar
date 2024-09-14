@@ -41,11 +41,11 @@ const HomeCustomeerWeb = (props) => {
           advanceSearchData={advanceSearchData}
         />
       </div>
-      <div
+      {/* <div
         class="AskAva-cta"
         data-product="creditTool"
         data-type="banner"
-      ></div>
+      ></div> */}
 
       <div className="d-flex justify-content-center col-12 p-0 m-0 home__search-div ">
         <HomeAdvanceSearch

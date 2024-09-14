@@ -89,7 +89,7 @@ export const HomeAdvanceSearch = (props) => {
       <div className="col-lg-11 row p-0 m-0 ">
         <div className="col-lg-10 p-0 m-0 row">
           <div className="w-100 row p-0 m-0">
-            <div className="p-0 m-0 col-6 col-lg-3 px-1 back_image_select ">
+            <div className="p-0 m-0 col-6 col-lg-3 px-1 ">
               <SelectBox
                 style={reactSelectInputStyleHome}
                 options={makeOptions}

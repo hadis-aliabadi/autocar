@@ -36,9 +36,10 @@ p {
   background-color: #00000055 !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  width: 10px !important;
+  width: 40px !important;
   height: 10px !important;
   cursor: pointer !important;
+  border-radius: 0% !important;
 }
 .text-black {
   color: #fff !important;
@@ -47,7 +48,7 @@ p {
   background-color: $black-color !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  width: 10px !important;
+  width: 40px !important;
   cursor: pointer !important;
   height: 10px !important;
 }
