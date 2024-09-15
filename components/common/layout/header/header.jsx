@@ -81,7 +81,8 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                 <a className="logo_fixed_size">
                   <img
                     className="logo_fixed_size"
-                    src={`${data?.prefixUrl + data?.logo_url}`}
+                    // src={`${data?.prefixUrl + data?.logo_url}`}
+                    src="https://autobunny-docs.s3.ca-central-1.amazonaws.com/1042/web-content/Logo.png"
                     alt=""
                   />
                 </a>
@@ -177,7 +178,7 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
         </div>
          
         <div className="p-0 m-0 d-none  d-lg-flex row w-100 justify-content-center align-items-start ">
-          <div className=" col-12 p-0 m-0 row justify-content-lg-center ">
+          <div className=" col-12 p-0 m-0 row justify-content-lg-center g-0">
             <div className="p-0 m-0 px-2 px-lg-1 px-xl-5 col-9 col-lg-12 d-none d-lg-flex flex-column pb-lg-4 pt-lg-3">
               <div className="p-0 m-0 col-12 py-0 d-flex flex-warp justify-content-end align-items-center">
                 <div className="p-0 m-0 d-flex flex-row col-12 justify-content-center flex-wrap">
@@ -187,7 +188,8 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                         <a className="">
                           <img
                             className="logo_fixed_size"
-                            src={`${data?.prefixUrl + data?.logo_url}`}
+                            // src={`${data?.prefixUrl + data?.logo_url}`}
+                            src="https://autobunny-docs.s3.ca-central-1.amazonaws.com/1042/web-content/Logo.png"
                             alt=""
                           />
                         </a>
@@ -198,8 +200,8 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                       <div className="p-0 m-0 d-flex text-center justify-content-end align-items-end ">
                         <span className="d-flex  align-items-center pr-2 pt-1">
                           <FaLocationPin
-                            color="#e74c3c"
-                            size={17}
+                            color="#ed1f24"
+                            size={13}
                             className="mr-1"
                           />
                           <a
@@ -207,6 +209,7 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                               "text-decoration-none text-white address_header text-left"
                             }
                             href="/directions"
+                           
                           >
                             {props?.data?.business_street}
                             {", "}
@@ -221,7 +224,7 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                           </a>
                         </span>
                         <span className="d-flex contact-seperator  align-items-center px-2">
-                          <MdEmail size={13} className="mr-1" color="#e74c3c" />
+                          <MdEmail size={13} className="mr-1" color="#ed1f24" />
                           <a
                             className={"text-decoration-none address_header"}
                             href={phonenumberConvertor(data?.business_phone2)}
@@ -230,7 +233,7 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                           </a>
                         </span>
                         <span className="d-flex contact-seperator  align-items-center px-2">
-                          <FaPhoneAlt  size={13} className="mr-1" color="#e74c3c" />
+                          <FaPhoneAlt  size={13} className="mr-1" color="#ed1f24" />
                           <a
                             className={"text-decoration-none address_header"}
                             href={phonenumberConvertor(data?.business_phone)}

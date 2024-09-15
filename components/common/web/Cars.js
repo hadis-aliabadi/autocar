@@ -179,7 +179,7 @@ const Cars = (props) => {
 
   return (
     <div
-      className={`row p-0 px-1 px-md-2 ${
+      className={`row p-0  ${
         otherFormik ? "px-lg-0" : ""
       } m-0 w-100 pt-5 pt-lg-0`}
     >
@@ -187,41 +187,13 @@ const Cars = (props) => {
         <span className="p-0 pl-1 pl-lg-4 m-0 row w-100 inventory_count_div__container text-center">
           {posts[0]?.fullSearchCount} Vehicles
         </span>
-        <div className="d-flex flex-wrap col-12 justify-content-between p-2">
+        <div className="d-flex flex-wrap col-12 justify-content-between p-2" style={{backgroundColor:"#ed1f24"}}>
           <InventorySortVehicles
             vehiclesData={vehiclesData}
             setShowMobileFilter={setShowMobileFilter}
             mobileRenderComponent={mobileRenderComponent}
           />
 
-          {/* <div className=" d-flex cart_view_container justify-content-between p-0 m-0 ">
-            <div
-              className=" p-1 d-flex justify-content-center align-items-center BorderBoxL"
-              style={{ backgroundColor: `${cartView ? "#616161" : "#fff"}` }}
-              onClick={() => {
-                setCartView(false);
-              }}
-            >
-              <BsListUl
-                color={cartView ? "#fff" : "#616161"}
-                size={20}
-                className="mr-1 view_stack"
-              />
-            </div>
-            <div
-              className=" p-1 d-flex justify-content-center align-items-center BorderBoxR"
-              style={{ backgroundColor: `${cartView ? "#fff" : "#616161"}` }}
-              onClick={() => {
-                setCartView(true);
-              }}
-            >
-              <BsFillGridFill
-                color={cartView ? "#616161" : "#fff"}
-                size={20}
-                className="ml-1 view_grid"
-              />
-            </div>
-          </div> */}
 
           <span className="cart_view_container d-flex justify-content-center ">
             <span
@@ -286,8 +258,8 @@ const Cars = (props) => {
                 <div
                   key={`carInventory${item?.id}`}
                   className={`${
-                    cartView ? " col-md-6 col-xl-4" : "col-lg-12"
-                  } p-0 col-12 m-0 py-1 p-md-2 px-lg-0 p-lg-1`}
+                    cartView ? " col-md-6 col-lg-4 col-xl-4" : "col-lg-12"
+                  } p-0 col-12 m-0 py-3 p-md-3  `}
                   id={`vehicle-${item?.id}`}
                 >
                   {cartView ? (

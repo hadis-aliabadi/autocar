@@ -273,7 +273,7 @@ const AdvanceFilter = (props) => {
     </h3>
     <form
       style={{
-        backgroundColor: "#ccc",
+        backgroundColor: "#fff",
         border: "1px solid rgb(0 0 0 / 10%)",
         boxShadow: "0 1px 4px 0 rgb(0 0 0 / 10%)",
       }}

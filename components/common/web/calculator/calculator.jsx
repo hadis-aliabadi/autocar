@@ -279,7 +279,7 @@ const CalculatoreCustomerWeb = (props) => {
     <>
       <form
         onSubmit={formik.handleSubmit}
-        className="16 m-0 calc-form p-0 shadow-sm w-100 d-flex row align-items-start justify-content-start eforms_calculator_container"
+        className="16 m-0 calc-form p-0  w-100 d-flex row align-items-start justify-content-start eforms_calculator_container"
         style={{ borderRadius: "5px" }}
       >
         <div className="col-12 m-0 p-0 calc-form-top d-flex  justify-content-between align-items-center eforms_calculator_header px-2 py-1">
@@ -287,7 +287,7 @@ const CalculatoreCustomerWeb = (props) => {
             <FaCalculator color="#000" className="mt-1" />
             <p className="p-0 m-0 pl-1">Payment Calculator</p>
           </div>
-          <div>
+          {/* <div>
             {" "}
             <button
               className="btn text-center w-100"
@@ -306,7 +306,7 @@ const CalculatoreCustomerWeb = (props) => {
                 <FaWindowClose color="#606060" />
               </span>
             </button>
-          </div>
+          </div> */}
         </div>
         <div
           className="p-0 m-0 col-12 px-2  py-3  label_style_2"
@@ -318,11 +318,11 @@ const CalculatoreCustomerWeb = (props) => {
           >
             <div className="p-1 m-0 col-12 col-lg-6 d-flex justify-content-center align-items-center ">
               <div className="p-0 m-0 form-group row w-100 align-items-center">
-                <label for="loanTerm" className="p-0 m-0 col-6 lable_style">
+                <label for="loanTerm" className="p-0 m-0 col-12 lable_style">
                   Payment Frequency
                 </label>
                 <Select
-                  className="form-select w-100  eforms_input_select_container col-lg-6 col-md-4 col-6 p-0 m-0"
+                  className="form-select w-100  eforms_input_select_container   col-12 p-0 m-0"
                   styles={reactSelectInputStyle}
                   options={Frequency}
                   onChange={(e) => {
@@ -337,11 +337,11 @@ const CalculatoreCustomerWeb = (props) => {
               <div className="p-0 m-0 form-group row w-100 align-items-center">
                 <label
                   for="vehiclePrice"
-                  className="p-0 m-0 col-6 lable_style "
+                  className="p-0 m-0 col-12 lable_style "
                 >
                   Vehicle Price
                 </label>
-                <div className="col-lg-6 col-md-4 col-6 p-0 m-0 row">
+                <div className="  col-12 p-0 m-0 row">
                   <NumberFormat
                     onValueChange={(e) => {
                       if (e.floatValue) {
@@ -376,10 +376,10 @@ const CalculatoreCustomerWeb = (props) => {
             </div>
             <div className="p-1 m-0 col-12 col-lg-6 d-flex flex-column justify-content-start align-items-start">
               <div className="p-0 m-0 form-group row w-100 align-items-center ">
-                <label for="downPayment" className="p-0 m-0 col-6 lable_style">
+                <label for="downPayment" className="p-0 m-0 col-12 lable_style">
                   Down payment
                 </label>
-                <div className="col-lg-6 col-md-4 col-6 p-0 m-0 row">
+                <div className="  col-12 p-0 m-0 row">
                   <NumberFormat
                     onValueChange={(e) => {
                       if (e.floatValue) {
@@ -414,10 +414,10 @@ const CalculatoreCustomerWeb = (props) => {
             </div>
             <div className="p-1 m-0 col-12 col-lg-6 d-flex flex-column justify-content-start align-items-start">
               <div className="p-0 m-0 form-group row w-100 align-items-center">
-                <label for="tradeValue" className="p-0 m-0 col-6 lable_style">
+                <label for="tradeValue" className="p-0 m-0 col-12 lable_style">
                   Your trade
                 </label>
-                <div className="col-lg-6 col-md-4 col-6 p-0 m-0 row">
+                <div className="  col-12 p-0 m-0 row">
                   <NumberFormat
                     onValueChange={(e) => {
                       if (e.floatValue) {
@@ -455,11 +455,11 @@ const CalculatoreCustomerWeb = (props) => {
 
             <div className="p-1 m-0 col-12 col-lg-6 d-flex flex-column justify-content-start align-items-start ">
               <div className="p-0 m-0 form-group row w-100 align-items-center">
-                <label for="loanTerm" className="p-0 m-0 col-6 lable_style">
+                <label for="loanTerm" className="p-0 m-0 col-12 lable_style">
                   Month Term
                 </label>
                 <Select
-                  className="form-select w-100  eforms_input_select_container col-lg-6 col-md-4 col-6 p-0 m-0"
+                  className="form-select w-100  eforms_input_select_container   col-12 p-0 m-0"
                   styles={reactSelectInputStyle}
                   options={options}
                   onChange={(e) => {
@@ -499,10 +499,10 @@ const CalculatoreCustomerWeb = (props) => {
             </div>
             <div className="p-1 m-0 col-12 col-lg-6 d-flex flex-column justify-content-start align-items-start">
               <div className="p-0 m-0 form-group row w-100 align-items-center">
-                <label for="loanTerm" className="p-0 m-0 col-6 lable_style">
+                <label for="loanTerm" className="p-0 m-0 col-12 lable_style">
                   Interest rate
                 </label>
-                <div className="col-lg-6 col-md-4 col-6 p-0 m-0 row">
+                <div className=" col-12 p-0 m-0 row">
                   <NumberFormat
                     onValueChange={(e) => {
                       if (e.floatValue) {
@@ -582,11 +582,11 @@ const CalculatoreCustomerWeb = (props) => {
               {/* Estimate */}
               <div className="p-1 m-0 col-12 col-lg-6 d-flex justify-content-center align-items-center">
                 <div className="p-0 m-0 form-group row w-100 align-items-center">
-                  <p className="d-flex col-6 col-md-6 col-lg-6   p-0 m-0 ">
+                  <p className="d-flex col-12   p-0 m-0 ">
                     Your Estimated Payment
                   </p>
                   <div
-                    className="col-lg-6 p-2 col-md-4 col-6 p-0 m-0 d-flex align-items-center form-control  "
+                    className=" p-2   col-12 p-0 m-0 d-flex align-items-center form-control  "
                     style={{
                       backgroundColor: "#eee",
                       border: "1px solid #ccc",
@@ -611,12 +611,12 @@ const CalculatoreCustomerWeb = (props) => {
               {/* Cost Of */}
               <div className="p-1 m-0 col-12 col-lg-6 d-flex justify-content-center align-items-center">
                 <div className="p-0 m-0 form-group row w-100 align-items-center">
-                  <p className="d-flex col-6 col-md-6 col-lg-6 p-0 m-0 ">
+                  <p className="d-flex col-12 p-0 m-0 ">
                     {" "}
                     Cost Of Borrowing
                   </p>
                   <div
-                    className="p-2 col-lg-6 col-md-4 col-6 p-0 m-0 d-flex align-items-center form-control "
+                    className="p-2  col-12 p-0 m-0 d-flex align-items-center form-control "
                     style={{
                       backgroundColor: "#eee",
                       border: "1px solid #ccc",
@@ -641,11 +641,11 @@ const CalculatoreCustomerWeb = (props) => {
               {/* MSRP */}
               <div className="p-1 m-0 col-12 col-lg-6 d-flex justify-content-center align-items-center">
                 <div className="p-0 m-0 form-group row w-100 align-items-center">
-                  <p className="d-flex col-6 col-md-6 col-lg-6 p-0 m-0 ">
+                  <p className="d-flex col-12 p-0 m-0 ">
                     MSRP
                   </p>
                   <div
-                    className="col-lg-6 p-2 col-md-4 col-6 p-0 m-0 d-flex align-items-center form-control "
+                    className=" p-2  col-12 p-0 m-0 d-flex align-items-center form-control "
                     style={{
                       backgroundColor: "#eee",
                       border: "1px solid #ccc",
@@ -670,18 +670,18 @@ const CalculatoreCustomerWeb = (props) => {
               {/* Total */}
               <div className="p-1 m-0 col-12 col-lg-6 d-flex justify-content-center align-items-center">
                 <div className="p-0 m-0 form-group row w-100 align-items-center">
-                  <p className="d-flex col-6 col-md-6 col-lg-6 p-0 m-0 ">
+                  <p className="d-flex col-12 p-0 m-0 ">
                     Total Obligation
                   </p>
                   <div
-                    className="p-2 col-lg-6 col-md-4 col-6 p-0 m-0 d-flex align-items-center form-control "
+                    className="w-100 p-2  col-12 p-0 m-0 d-flex align-items-center form-control "
                     style={{
                       backgroundColor: "#eee",
                       border: "1px solid #ccc",
                       borderRadius: "0",
                     }}
                   >
-                    <h5 className="calc-input-soms d-flex txt-calc row  p-0 m-0 justify-content-start align-items-start text-start">
+                    <h5 className="calc-input-soms d-flex txt-calc row w-100 p-0 m-0 justify-content-start align-items-start text-start">
                       <NumberFormat
                         value={Math.round(results)}
                         displayType={"text"}
@@ -726,7 +726,7 @@ const CalculatoreCustomerWeb = (props) => {
               {/* </div>
             </div> */}
 
-              <div className="8 p-0 m-0 col-12 col-lg-6 m-1">
+              {/* <div className="8 p-0 m-0 col-12 col-lg-6 m-1">
                 <div className="p-0 m-0 row justify-content-center align-items-center">
                   <div className="p-1 m-0 col-12 row">
                     <input
@@ -741,26 +741,26 @@ const CalculatoreCustomerWeb = (props) => {
                     <label className="m-0 ml-1">Include sales tax</label>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
-            <div className="p-0 m-0 col-12 row justify-content-center align-items-center">
-              <div className="p-1 m-0 pt-2 col-12 col-md-8 col-lg-6">
+            <div className="p-0 m-0 col-12 row justify-content-strat align-items-center">
+              <div className="p-1 m-0 pt-2 col-4">
                 <button
                   type="submit"
                   style={{ height: "auto !important" }}
                   className="py-1 btn blue_button_3 text-center w-100"
                 >
-                  <span className="p-0 m-0 pb-2 ">CALCULATE PAYMENT</span>
+                  <span className="p-0 m-0 pb-2 ">Calculate Payment</span>
                 </button>
               </div>
             </div>
           </div>
         </div>
       </form>
-      <div className="row w-100 m-0 p-0 justify-content-center align-items-center mt-5">
+      <div className="row w-100 m-0 p-0 justify-content-start align-items-center mt-5">
         <Link href="/forms/finance">
-          <a className="btn blue_button_3 col-11 col-md-5 px-3 py-2">
+          <a className="btn blue_button_3 col-12 col-md-4 px-3 py-2">
             Apply For Financing
           </a>
         </Link>

@@ -10,9 +10,9 @@ const EformsConatctInfo = (props) => {
   return (
     <div
       className="p-4  pt-0 m-0 mb-4 w-100 eform_contact_container "
-      style={{
-        boxShadow: "0 0 3.6rem rgba(0, 0, 0, 0.10)",
-      }}
+      // style={{
+      //   boxShadow: "0 0 3.6rem rgba(0, 0, 0, 0.10)",
+      // }}
     >
       <h3 className="contact_info_title2 my-3">Contact Information</h3>
 
@@ -47,7 +47,7 @@ const EformsConatctInfo = (props) => {
         {", "}
         {dealerData?.business_postal}
       </p>
-      <span className="contact-e-title"> Location 2: </span>
+      {/* <span className="contact-e-title"> Location 2: </span>
 
       {dealerData?.business_phone2 ? (
         <p className="p-0 m-0 my-2">
@@ -64,20 +64,20 @@ const EformsConatctInfo = (props) => {
             </span>
           </a>
         </p>
-      ) : null}
+      ) : null} */}
 
      
-      <p className="p-0 m-0 contact_info my-3">
+      {/* <p className="p-0 m-0 contact_info my-3">
         <div className="d-flex flex-row align-items-center ">
           <FaMapMarker />
           <span className="contact-e-title ">Address:</span>
         </div>
         {dealerData?.business_caption}
-      </p>
+      </p> */}
       <div className="w-100 p-0 m-0 my-3">
         <EformsTimeWork timework={dealerData?.timeWork} />
       </div>
-      {router.pathname !== "/directions" && (
+      {/* {router.pathname !== "/directions" && (
         <div className="w-100 p-0 m-0 ">
           <Link href="/directions">
             <a className=" p-0 pt-3 col-8 col-md-4 col-lg-8 d-flex align-items-center justify-content-start">
@@ -85,7 +85,7 @@ const EformsConatctInfo = (props) => {
             </a>
           </Link>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

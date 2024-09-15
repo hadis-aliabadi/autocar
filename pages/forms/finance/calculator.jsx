@@ -38,7 +38,7 @@ const FinancialCalculatorPage = (props) => {
           href={`${dealerData?.prefixUrl}${dealerData?.logo_url}`}
         />
       </Head>
-      <div style={{ backgroundColor: "#f6f6f6" }} className="row w-100 p-0 m-0">
+      <div  className="row w-100 p-0 m-0">
         <EFormsHeaderSection
           title=""
           desc=""
@@ -54,7 +54,7 @@ const FinancialCalculatorPage = (props) => {
           <div className="px-0 px-md-5 py-3 m-0 row w-100 justify-content-center align-items-start ">
             <div
               className={" p-4 m-0 w-100 col-12 col-lg-8 tabel_title"}
-              style={{ backgroundColor: "#f5f5f5" }}
+              style={{ backgroundColor: "#fff" }}
             >
               <EFormsHeaderSection
                 title="Car Loan Calculator"
@@ -68,8 +68,8 @@ const FinancialCalculatorPage = (props) => {
               </h4>
               <CalculatoreCustomerWeb />
             </div>
-            <div className="pl-lg-3 p-0 m-0 w-100 col-12  col-lg-4 e-contact-on-top">
-              <div className="pt-5 p-lg-0 m-0 px-xl-2 ">
+            <div className="pl-lg-3 p-0 m-0 w-100 col-12  col-lg-4 ">
+              <div className=" p-lg-0 m-0 px-xl-2 ">
                 <EformsConatctInfo dealerData={dealerData} />
               </div>
             </div>

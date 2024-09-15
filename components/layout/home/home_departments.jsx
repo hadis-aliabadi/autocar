@@ -3,9 +3,31 @@ import { FaAngleRight } from "react-icons/fa";
 
 const HomeDepartments = (props) => {
   const { dealerData } = props;
+  const cardsData = [
+    {
+      title: "Card 1",
+      description: "This is the description for card 1",
+      imageSrc: "/images/card1.jpg",
+    },
+    {
+      title: "Card 2",
+      description: "This is the description for card 2",
+      imageSrc: "/images/card2.jpg",
+    },
+    {
+      title: "Card 3",
+      description: "This is the description for card 3",
+      imageSrc: "/images/card3.jpg",
+    },
+    {
+      title: "Card 4",
+      description: "This is the description for card 4",
+      imageSrc: "/images/card4.jpg",
+    },
+  ];
   return (
     <>
-      <div
+      {/* <div
         className="p-1  m-0 w-100 d-flex row align-items-center justify-content-center linkto_div__conatiner_home-5"
         style={{ backgroundColor: "#333" }}
       >
@@ -45,7 +67,7 @@ const HomeDepartments = (props) => {
                             </div>
                             <div className=" m-0 linkto_img_text_div__container_home-5">
                               <span className="linkto_img_text_span__container_home-5 py-2 d-flex flex-column justify-content-start">
-                                {/* <img src="/images/home/department/about-us/Arrow.png" /> */}
+                             
 
                               
                                 <div
@@ -87,7 +109,7 @@ const HomeDepartments = (props) => {
                             </div>
                             <div className=" m-0 linkto_img_text_div__container_home-5">
                               <span className="linkto_img_text_span__container_home-5 py-2 d-flex flex-column justify-content-start">
-                                {/* <img src="/images/home/department/about-us/Arrow.png" /> */}
+                               
 
                               
                                 <div
@@ -185,7 +207,28 @@ const HomeDepartments = (props) => {
             </div>
           </div>
         </div>
+      </div> */}
+       <div className="">
+      <div className="row g-0">
+        {cardsData.map((card, index) => (
+          <div key={index} className="col-12 col-md-6 col-lg-3 p-0">
+            <div className="card h-100 border-0">
+              <img
+                src={card.imageSrc}
+                alt={card.title}
+                width={300}
+                height={200}
+                className="card-img-top"
+              />
+              <div className="card-body">
+                <h5 className="card-title">{card.title}</h5>
+                <p className="card-text">{card.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
+    </div>
     </>
   );
 };

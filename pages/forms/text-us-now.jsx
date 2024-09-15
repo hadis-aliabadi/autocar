@@ -108,7 +108,7 @@ export default function ContactUpPage(props) {
         <div className="px-0 px-md-5 px-xl-4 py-3 m-0 row w-100 justify-content-center align-items-start ">
           <div className="row col-12 col-lg-10 p-0 pt-2 px-2 px-lg-0">
             <div
-              style={{ backgroundColor: "#f3f3f3" }}
+              style={{ backgroundColor: "#fff" }}
               className={"pr-lg-3 p-0 m-0 w-100 col-12 col-lg-7 col-xl-8"}
             >
               <form
@@ -142,7 +142,7 @@ export default function ContactUpPage(props) {
                       ""
                     )}
                   </div>
-                  <div className="form-group col-sm-12 col-md-12 p-0 m-0 mb-2 p-1">
+                  {/* <div className="form-group col-sm-12 col-md-12 p-0 m-0 mb-2 p-1">
                     <SearchForVehicle
                       vehicleDataForSearch={vehicleDataForSearch}
                       formik={formik}
@@ -162,8 +162,8 @@ export default function ContactUpPage(props) {
                         {formik.errors.message}
                       </small>
                     )}
-                  </div>
-                  <div className="p-1 m-0 col-12">
+                  </div> */}
+                  {/* <div className="p-1 m-0 col-12">
                       <ReCAPTCHA
                         ref={recaptchaRef}
                         sitekey={NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
@@ -174,15 +174,15 @@ export default function ContactUpPage(props) {
                         }}
                         theme="light"
                       />
-                    </div>
+                    </div> */}
                   <div className="p-1 m-0 col-12 d-flex justify-content-start">
-                    <div className="p-0 m-0 col-6 col-lg-4 d-flex justify-content-start">
+                    <div className="p-0 m-0 col-2 col-lg-4 d-flex justify-content-start">
                       {isLoading ? (
                         <Loading />
                       ) : (
                         <button
                           type="submit"
-                          className="btn blue_button_3 w-75"
+                          className="btn blue_button_3 w-100"
                         >
                           Send Text
                         </button>
@@ -193,7 +193,7 @@ export default function ContactUpPage(props) {
               </form>
             </div>
             <div className="p-0 m-0  col-12 col-lg-5 col-xl-4">
-              <div className="pt-5 p-lg-0 e-contact-on-top m-0  pl-lg-4 pr-lg-2">
+              <div className=" p-lg-0  m-0  pl-lg-4 pr-lg-2">
                 <EformsConatctInfo dealerData={dealerData} />
               </div>
             </div>

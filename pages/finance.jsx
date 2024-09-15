@@ -3,6 +3,8 @@ import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 import EFormsHeaderSection from "../components/common/web/eform-header/eforms_header_section";
 import { findScript } from "../utils/common/html_script";
+import FinanceComponent from "../components/common/web/financing/finance";
+import FindYourCar from "../components/layout/home/find-your-car";
 const FinanceMain = props => {
   const { dealerData } = props;
   return (
@@ -43,7 +45,9 @@ const FinanceMain = props => {
       <EFormsHeaderSection
         image={dealerData?.prefixUrl + dealerData?.serviceApointment_image_url}
       />
-      <div className="p-0 m-0 row w-100 justify-content-center align-items-center ">
+      <FinanceComponent/>
+      <FindYourCar/>
+      {/* <div className="p-0 m-0 row w-100 justify-content-center align-items-center ">
         <div className="p-0 m-0 col-11 mt-4 col-xl-10 px-xl-0">
           <div
             className="p-0 m-0 row w-100  p-3  justify-content-center align-items-start"
@@ -100,7 +104,7 @@ const FinanceMain = props => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

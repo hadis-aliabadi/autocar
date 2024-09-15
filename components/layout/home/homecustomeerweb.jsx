@@ -10,6 +10,9 @@ import HomeFinanceCTA from "./home_finance_cta";
 import HomeDepartments from "./home_departments";
 import HomeWelcome from "./home-components/welcome_home";
 import QuickSearchHome from "./quickSearch";
+import TwoCard from "./two-card";
+import FeaturedVehicles from "./featured";
+import FindYourCar from "./find-your-car";
 // import WelcomeHome from "./home-components/welcome_home";
 // import Googlereviewshomepage from "./Googlereviews";
 // import ContactBanner from "./contact_banner";
@@ -47,15 +50,17 @@ const HomeCustomeerWeb = (props) => {
         data-type="banner"
       ></div> */}
 
-      <div className="d-flex justify-content-center col-12 p-0 m-0 home__search-div ">
+      <div className="d-flex justify-content-center col-12 p-0 m-0  ">
         <HomeAdvanceSearch
           vehicleDataForSearch={vehicleDataForSearch}
           advanceSearchData={advanceSearchData}
         />
       </div>
-
-
-      {specialData?.data.length > 0 && (
+       <TwoCard/>
+       <FeaturedVehicles/>
+      <QuickSearchHome />
+      <HomeDepartments />
+      {/* {specialData?.data.length > 0 && (
         <div className="col-12 d-flex p-0 m-0 pb-3 justify-content-center overflos-container-slider background_special-inventory py-0 ">
           <SpecialInventorySlider
             specialCars={specialData?.data}
@@ -63,19 +68,20 @@ const HomeCustomeerWeb = (props) => {
             title={"Featured Vehicles"}
           />
         </div>
-      )}
-      <HomeDepartments />
-      <HomeWelcome dealerData={data?.dealerData} />
+      )} */}
+      
+      {/* <HomeWelcome dealerData={data?.dealerData} /> */}
         {/* <AboutUSHome dealerData={data?.dealerData} /> */}
-        <QuickSearchHome />
+       
 
         {/* <HomeFinanceCTA dealerData={dealerData} /> */}
       {/* <HomeWhyUs /> */}
+      
       <div className="col-12 d-flex p-0 m-0 justify-content-center home_fixed_finance_bg py-5 ">
         <GoogleReviewsHomePage />
       </div>
-
-      <Location dealerData={data?.dealerData} type="1" />
+      <FindYourCar/>
+      {/* <Location dealerData={data?.dealerData} type="1" /> */}
     </div>
   );
 };

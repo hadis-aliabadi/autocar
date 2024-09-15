@@ -121,7 +121,7 @@ export default function ContactUpPage(props) {
           href={`${dealerData?.prefixUrl}${dealerData?.logo_url}`}
         />
       </Head>
-      <div style={{ backgroundColor: "#fff" }} className="p-0 m-0 w-100">
+      <div style={{ backgroundColor: "#f6f6f6" }} className="p-0 m-0 w-100">
         <div className="p-0 m-0 w-100 row justify-content-center contact_us_pos">
           <EFormsHeaderSection
             image={dealerData?.prefixUrl + dealerData?.contactUs_image_url}
@@ -130,7 +130,7 @@ export default function ContactUpPage(props) {
           <div className="row col-12 col-lg-10 p-0 m-0 pt-4 px-4 px-xl-0">
             <div className="p-1 p-md-3 m-0 col-12 col-lg-7 col-xl-8 ">
               <div
-                style={{ backgroundColor: "#f5f5f5" }}
+                style={{ backgroundColor: "#fff" }}
                 className="p-2 p-lg-3 m-0 row w-100 contact_us_container"
               >
                 <form
@@ -243,10 +243,10 @@ export default function ContactUpPage(props) {
                         )}
                       </div>
                       <div className="p-1 m-0 form-group col-md-9 col-12">
-                        <SearchForVehicle
+                        {/* <SearchForVehicle
                           vehicleDataForSearch={vehicleDataForSearch}
                           formik={formik}
-                        />
+                        /> */}
                         <label className="label_style">Message</label>
 
                         <textarea
@@ -266,7 +266,7 @@ export default function ContactUpPage(props) {
                         )}
                       </div>
                       <div className="p-1 m-0 col-12">
-                      <ReCAPTCHA
+                      {/* <ReCAPTCHA
                         ref={recaptchaRef}
                         sitekey={NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                         size="compact" // or "compact" or "invisible"
@@ -275,7 +275,7 @@ export default function ContactUpPage(props) {
                           background: "transparent",
                         }}
                         theme="light"
-                      />
+                      /> */}
                     </div>
                       <div className="p-1 m-0 col-sm-8 col-12 d-flex my-2 justify-content-start align-items-end">
                         <div className="p-0 m-0 w-50">
@@ -298,7 +298,7 @@ export default function ContactUpPage(props) {
               </div>
             </div>
             <div className="p-0 m-0 pt-lg-3  col-12 col-lg-5 col-xl-4 justify-content-center d-none d-lg-flex">
-              <div className=" pt-3 pt-lg-0 e-contact-on-top p-lg-0 m-0 px-1 px-lg-2 ">
+              <div className=" pt-3 pt-lg-0  p-lg-0 m-0 px-1 px-lg-2 ">
                 <EformsConatctInfo dealerData={dealerData} />
               </div>
             </div>

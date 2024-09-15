@@ -34,19 +34,19 @@ const QuickSearchHome = () => {
       link: "/cars?Bodystyle=Convertible",
       imageSrc: "/images/home/body-style/convertible.webp",
     },
-    {
-      label: "Coupe",
-      link: "/cars?Bodystyle=Coupe",
-      imageSrc: "/images/home/body-style/coupe.webp",
-    },
+    // {
+    //   label: "Coupe",
+    //   link: "/cars?Bodystyle=Coupe",
+    //   imageSrc: "/images/home/body-style/coupe.webp",
+    // },
     
     
     
-    {
-      label: "Wagon",
-      link: "/cars?Bodystyle=Wagon",
-      imageSrc: "/images/home/body-style/wagon.webp",
-    },
+    // {
+    //   label: "Wagon",
+    //   link: "/cars?Bodystyle=Wagon",
+    //   imageSrc: "/images/home/body-style/wagon.webp",
+    // },
   ];
 
   return (
@@ -66,16 +66,35 @@ const QuickSearchHome = () => {
             </h2>
             <div className="short"></div>
           </div>
-          <div className="p-0 pb-5 m-0 col-12 d-flex justify-content-center">
-            <div className="p-0 m-0 col-lg-8 col-12 row justify-content-center align-items-center">
+          {/* <div className="p-0 pb-5 m-0 col-12 d-flex justify-content-center">
+            <div className="p-0 m-0 col-lg-12 col-12 row justify-content-center align-items-center">
               {bodyStyleData.map((item, index) => (
                 <div
                   key={index}
-                  className="p-2 m-0 col-8 col-sm-6 col-md-3 p-3 mb-4 text-center text-uppercase"
+                  className="p-2 m-0 col-12 col-sm-6 col-md-3 p-3 mb-4 text-center text-uppercase"
                 >
                   <Link href={item.link}>
                     <a className="p-0 m-0 scale_hover_sistem">
                       <img className="w-75" src={item.imageSrc} alt="" />
+                      <div className="p-0 m-0 pt-2 w-100 text-center " style={{ fontSize:"17px",fontWeight:700,color:"white"}}>
+                        {item.label}
+                      </div>
+                    </a>
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div> */}
+          <div className="container ">
+            <div className="row justify-content-center align-items-center">
+              {bodyStyleData.map((item, index) => (
+                <div
+                  key={index}
+                  className="col-12 col-sm-4 col-md-3 d-flex justify-content-center align-items-center mb-4"
+                >
+                  <Link href={item.link}>
+                    <a className="p-0 m-0 scale_hover_sistem">
+                      <img  src={item.imageSrc} alt="" />
                       <div className="p-0 m-0 pt-2 w-100 text-center " style={{ fontSize:"17px",fontWeight:700,color:"white"}}>
                         {item.label}
                       </div>

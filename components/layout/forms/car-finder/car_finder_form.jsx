@@ -388,7 +388,7 @@ const CarFinderForm = (props) => {
                           />
                         </div>
                       </div>
-                      <div className="p-1 m-0 col-12">
+                      {/* <div className="p-1 m-0 col-12">
                         <ReCAPTCHA
                           ref={recaptchaRef}
                           sitekey={NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
@@ -399,7 +399,7 @@ const CarFinderForm = (props) => {
                           }}
                           theme="light"
                         />
-                      </div>
+                      </div> */}
                       <div className="p-1 m-0 col-12 row justify-content-start align-items-center">
                         <div className="p-0 m-0 col-4 col-lg-4">
                           {isLoading ? (
@@ -742,8 +742,8 @@ const CarFinderForm = (props) => {
               )}
             </div>
             {typeof otherFormik === "undefined" && (
-              <div className="pl-lg-3 p-0 m-0 w-100 col-12 col-lg-5 col-xl-4 d-none d-lg-flex">
-                <div className="pt-5 p-lg-0 m-0 px-xl-2 e-contact-on-top">
+              <div className="pl-lg-3 p-0 m-0 w-100 col-12 col-lg-5 col-xl-4 ">
+                <div className="pt-5 p-lg-0 m-0 px-xl-2 ">
                   <EformsConatctInfo dealerData={dealerData} />
                 </div>
               </div>

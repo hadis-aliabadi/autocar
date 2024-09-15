@@ -41,14 +41,14 @@ const Direction = (props) => {
       </Head>
 
       <div
-        style={{ backgroundColor: "#fff" }}
+        style={{ backgroundColor: "#f6f6f6" }}
         className="p-0 col-12 row justify-content-center  m-0 w-100 "
       >
         <div className="11 row col-12 col-lg-11 pt-5 px-4">
           <div className="d-flex flex-column col-lg-8   col-12">
             <div className="p-0 m-0 eforms_form_div_conatiner d-flex align-items-center justify-content-center">
               <div
-                style={{ backgroundColor: "#f5f5f5" }}
+                style={{ backgroundColor: "#ffff" }}
                 className="p-2 m-0 my-3 my-md-0 row w-100 eforms_form__container row align-items-center justify-content-center"
               >
                 <div className="p-0 m-0 mb-5 col-11 col-sm-11 eforms_form_section_div__container">

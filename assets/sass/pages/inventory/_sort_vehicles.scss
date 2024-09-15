@@ -9,7 +9,7 @@
 }
 
 .inventory_sort_button__container {
-  @include all_fonts_styles(12px, 500, $main-font, #000);
+  @include all_fonts_styles(12px, 500, $main-font, #fff);
 
   background-color: transparent;
   color: #000 !important;

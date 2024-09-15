@@ -203,7 +203,7 @@ mark {
 
 .google_review_card_childe-style {
   .google_review_card-style {
-    background-color: #333 !important;
+    background-color: #fff !important;
     text-align: center;
     margin: 15px 15px;
     position: relative;
@@ -235,7 +235,7 @@ mark {
   line-height: 1.5;
   text-align: start;
   color: rgb(0, 0, 0);
-  @include all_fonts_styles(15px, $fw-normal, sans-serif, #fff);
+  @include all_fonts_styles(15px, $fw-normal, sans-serif, #000);
 }
 
 .swiper-container {

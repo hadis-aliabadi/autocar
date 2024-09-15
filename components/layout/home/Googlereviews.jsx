@@ -66,10 +66,10 @@ const GoogleReviewsHomePage = () => {
                       </div>
 
                       <div className="p-0 m-0 col-10 mx-md-3 title-review-tt d-flex flex-column justify-content-center    ">
-                        <div className="d-flex justify-content-center text-light">
+                        <div className="d-flex justify-content-center ">
                           {review?.full_name}
                         </div>
-                        <div className="p-0 m-0  mt-2 mb-sm-0 d-flex alige-items-center  justify-content-center  text-white">
+                        <div className="p-0 m-0  mt-2 mb-sm-0 d-flex alige-items-center  justify-content-center  text-dark">
                           {Array(+review?.rate)
                             ?.fill("")
                             ?.map(() => {
@@ -89,14 +89,14 @@ const GoogleReviewsHomePage = () => {
                       {review?.desc}
                     </div>
 
-                    <a
+                    {/* <a
                       href="https://www.google.com/search?client=firefox-b-d&q=dreamfleet+l6x+1g3#lrd=0x882b474f09887a6b:0xd00337900ad37b6d,1,,,,"
                       target="_blank"
                     >
                       <span className="p-0 m-0 mt-4 link_to_google_review-style text-decoration-none justify-content-start d-flex px-3">
                         Read more at Google
                       </span>
-                    </a>
+                    </a> */}
                   </div>
                 </fieldset>
               </div>

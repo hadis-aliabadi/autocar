@@ -10,7 +10,7 @@ const EFormsHeaderSection = ({
 }) => {
   return (
     <div
-      className={`FIRST-IN-EFORM p-0 m-0 py-0 w-100 row d-flex flex-column justify-content-center align-items-center ${className}`}
+      className={` p-0 m-0 py-0 w-100 row d-flex flex-column justify-content-center align-items-center ${className}`}
     >
       <div
         className="p-0 m-0 w-100 col-12 justify-content-start align-items-start"

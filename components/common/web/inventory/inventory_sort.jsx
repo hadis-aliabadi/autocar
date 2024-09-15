@@ -13,10 +13,10 @@ const InventorySortVehicles = ({showMobileFilter,setShowMobileFilter}) => {
 
   return (
     <>
-      <div className="p-0 m-0  mt-lg-0 px-md-1 px-lg-3 col-9 w-100">
+      <div className="p-0 m-0  mt-lg-0  col-9 w-100">
         <div className="p-0 m-0  row w-100  align-items-center justify-content-between">
-          <div className="p-0 m-0 d-flex flex-wrap align-items-center">
-            <b style={{ color: "#000",fontSize:'13px' }} className="mb-2 ">
+          <div className="p-0 m-0 d-flex flex-wrap align-items-center " style={{ color: "#fff" }}>
+            <b style={{fontSize:'13px' }} className="mb-2 ">
               Sort:
             </b>
            

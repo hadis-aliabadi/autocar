@@ -95,7 +95,7 @@ export default function Inventory(props) {
         setkeyworder={setkeyworder}
       >
         <div
-          style={{ backgroundColor: "#fff" }}
+          style={{ backgroundColor: "#f6f6f6" }}
           className="row pt-3 justify-content-center p-0 m-0 w-100"
         >
           <div className="col-12 col-md-12 col-lg-11 mx-auto col-xl-11 p-0 m-0  justify-content-center d-flex">

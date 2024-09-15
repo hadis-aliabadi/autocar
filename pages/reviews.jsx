@@ -1,5 +1,7 @@
 import Head from "next/head";
 import GoogleReviewsHomePage from "../components/layout/home/Googlereviews";
+import { GoogleReviewData } from "../data/google_review_data";
+import { FaStar } from "react-icons/fa";
 
 const Direction = ({dealerData}) => {
   return (
@@ -39,11 +41,51 @@ const Direction = ({dealerData}) => {
       </Head>
 
       <div
-        style={{ backgroundColor: "#fff" }}
+        style={{ backgroundColor: "#f6f6f6" }}
         className="p-0 col-12 row justify-content-center  m-0 w-100 "
       >
-        <div className="col-12 d-flex p-0 m-0 justify-content-center overflos-container-slider py-5 ">
+        {/* <div className="col-12 d-flex p-0 m-0 justify-content-center overflos-container-slider py-5 ">
           <GoogleReviewsHomePage />
+        </div> */}
+        <div className="container mt-5">
+        {GoogleReviewData?.map((review, index) =>  (
+            <div className="row w-100 mb-5">
+              <div className="col-4 ">
+                <div className="col d-flex justify-content-start">
+                        <img
+                          className="mx-md-3"
+                          src={"/images/google-plus.png"}
+                          style={{
+                            height: "50px",
+                            width: "50px",
+                          }}
+                        />
+                </div>
+                <div className="col ">
+                        <div className="d-flex justify-content-start ">
+                          {review?.full_name}
+                        </div>
+                        <div className="p-0 m-0  mt-2 mb-sm-0 d-flex alige-items-center  justify-content-start  text-dark">
+                          {Array(+review?.rate)
+                            ?.fill("")
+                            ?.map(() => {
+                              return (
+                                <FaStar
+                                  size={"20px"}
+                                  color="gold "
+                                  className="mx-1"
+                                />
+                              );
+                            })}
+                        </div>
+                </div>
+              </div>
+              <div className="col-8 p-5" style={{background:'#e4e4e4'}}>
+                {review?.desc}
+              </div>
+            </div>
+          ))
+        }
         </div>
       </div>
     </>

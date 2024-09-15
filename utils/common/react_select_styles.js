@@ -207,7 +207,7 @@ export const reactSelectAdvanceSearchInputStyleCarDeatail = {
     color: "#000",
     right: "100px",
     outLine: "none",
-    backgroundColor: "#fff !important",
+    backgroundColor: "#f6f6f6 !important",
     "&:hover": {
       color: "#000",
     },
@@ -215,7 +215,7 @@ export const reactSelectAdvanceSearchInputStyleCarDeatail = {
 
   control: (base, state) => ({
     ...base,
-    backgroundColor: "#fff !important",
+    backgroundColor: "#f6f6f6 !important",
     borderRadius: "1px solid #000",
     color: "#000",
     height: "36px",
@@ -250,7 +250,7 @@ export const reactSelectAdvanceSearchInputStyleCarDeatail = {
     ...colorBoxForReactSelect(),
     color: "#000",
     border: "none",
-    backgroundColor: "#fff !important",
+    backgroundColor: "#f6f6f6 !important",
   }),
   singleValue: (styles, { data }) => ({
     ...styles,

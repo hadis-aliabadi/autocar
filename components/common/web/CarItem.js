@@ -136,13 +136,13 @@ const CarItem = ({
         </Modal.Body>
       </Modal>
       <div className="row p-0 m-0 w-100 h-100 bg-white cart-item-wrapper">
-        {/* {car?.in_transit === 1 && <h1>transitttttttttttttttt</h1>} */}
+       
         <div className="p-0 m-0 col-12 w-100">
           {car?.youtube_link && (
             <div
               style={{ borderRadius: "0" }}
               onClick={() => setVideo(true)}
-              className=" play-video px-0 px-md-2 px-lg-0 pb-2 p-0 m-0  col-12 col-md-12 col-lg-12 btn"
+              className=" play-video px-0 px-md-4 px-lg-0 pb-4 p-0 m-0  col-12 col-md-12 col-lg-12 btn"
             >
               <a className="glightbox_video">
                 <svg
@@ -422,7 +422,7 @@ const CarItem = ({
                       }
                     }}
                   />
-                  <label className="p-0  pl-1 m-0">Select For Compare</label>
+                  <label className="p-0  pl-1 m-0">Add To Compare</label>
                 </div>
 
                 <div className="p-0 m-0 py-1  text-left">

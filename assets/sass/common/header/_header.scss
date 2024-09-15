@@ -64,12 +64,13 @@ p {
   }
 }
 .header_a__navlink {
+  
   white-space: nowrap;
-  @include all_fonts_styles(14px, 600, $main-font, #000);
+  @include all_fonts_styles(14px, 300, $main-font, #000);
   letter-spacing:0;
-text-transform: uppercase;
+
   &:hover {
-    @include all_fonts_styles(14px, 600, $main-font, $black-color);
+    @include all_fonts_styles(14px, 300, $main-font, $main-color);
 
     .header_a__navlink_submenu_container {
       opacity: 1;
@@ -376,9 +377,9 @@ text-transform: uppercase;
 }
 
 .address_header {
-  @include all_fonts_styles(14px, 600, $main-font, $black-color !important);
+  @include all_fonts_styles(13px, 100, $main-font, $black-color !important);
   @include tablet {
-    @include all_fonts_styles(14px, 600, $main-font, $black-color !important);
+    @include all_fonts_styles(13px, 100, $main-font, $black-color !important);
   }
 }
 
@@ -454,8 +455,8 @@ text-transform: uppercase;
 .logo_fixed_size {
   margin-bottom: 3px;
   margin-top: 3px;
-  height: 150px;
-  width: 150px;
+  // height: 150px;
+  // width: 150px;
 }
 
 .contact-seperator {
