@@ -90,7 +90,7 @@ const QuickSearchHome = () => {
               {bodyStyleData.map((item, index) => (
                 <div
                   key={index}
-                  className="col-12 col-sm-4 col-md-3 d-flex justify-content-center align-items-center mb-4"
+                  className="col-12 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center mb-4"
                 >
                   <Link href={item.link}>
                     <a className="p-0 m-0 scale_hover_sistem">

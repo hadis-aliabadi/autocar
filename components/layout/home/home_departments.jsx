@@ -26,7 +26,7 @@ const HomeDepartments = (props) => {
     },
   ];
   return (
-    <>
+    <div className="d-flex justify-content-center align-items-center w-100">
       {/* <div
         className="p-1  m-0 w-100 d-flex row align-items-center justify-content-center linkto_div__conatiner_home-5"
         style={{ backgroundColor: "#333" }}
@@ -208,10 +208,10 @@ const HomeDepartments = (props) => {
           </div>
         </div>
       </div> */}
-       <div className="">
-      <div className="row g-0">
+      
+      <div className="row g-0 w-100 ">
         {cardsData.map((card, index) => (
-          <div key={index} className="col-12 col-md-6 col-lg-3 p-0">
+          <div key={index} className="col-12 col-md-6 col-lg-3 p-0 w-100">
             <div className="card h-100 border-0">
               <img
                 src={card.imageSrc}
@@ -228,8 +228,8 @@ const HomeDepartments = (props) => {
           </div>
         ))}
       </div>
+    
     </div>
-    </>
   );
 };
 
