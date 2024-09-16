@@ -8,8 +8,8 @@ const FeaturedVehicles = () => {
           <div className="col-12">
             <header className=" d-flex justify-content-center align-items-center">
               <div>
-                <h2 className="text-center">Featured Vehicles</h2>
-                <h6 className="text-center">New and popular items at competitive prices.</h6>
+                <h3 className="text-center font-weight-bolder fs-1">Featured Vehicles</h3>
+                <p className="text-center mt-2">New and popular items at competitive prices.</p>
               </div>
             </header>
           </div>

@@ -2,16 +2,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const WarrantySection = ({ title, description, listItems }) => (
   <div className="col-md-6">
-    <h2>{title}</h2>
+    <h2 className='font-weight-bold' style={{fontSize:'33px'}}>{title}</h2>
     <div className="space-10"></div>
     <div className="f-txt">
       {description.map((para, index) => (
-        <p key={index}>{para}</p>
+        <p style={{fontSize:'14px'}} key={index}>{para}</p>
       ))}
       {listItems && (
-        <ul className="inner-list">
+        <ul className="" >
           {listItems.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li style={{fontSize:'14px'}} key={index}>{item}</li>
           ))}
         </ul>
       )}
@@ -56,14 +56,10 @@ const VehicleProtectionComponent = () => {
   ];
 
   return (
-    <div className="main-content-inner col-sm-12 col-md-12">
-      <div id="primary" className="content-area">
+    <div className="d-flex justify-content-center align-items-center m-5 p-4">
+      <div id="primary" className="p-5">
         <main id="main" className="site-main" role="main">
           <div className="post-inner-content">
-            <header className="entry-header page-header">
-              <h2>Vehicle Protection</h2>
-            </header>
-
             <div className="row f2-section">
               <WarrantySection
                 title="Extended Warranty"
@@ -73,25 +69,27 @@ const VehicleProtectionComponent = () => {
                   '“Let’s keep your car on the road.”'
                 ]}
               />
-              <div className="col-md-6" style={{ paddingLeft: 0 }}>
-                <img src="https://autobunny-docs.s3.ca-central-1.amazonaws.com/common/design/cta/f-2parts3.png" alt="Get Pre-Approved" style={{ margin: 0 }} />
+              <div className="col-md-6" style={{ paddingLeft: 0 ,borderRadius:'15px' } }>
+                <img src="https://autobunny-docs.s3.ca-central-1.amazonaws.com/common/design/cta/f-2parts3.png" alt="Get Pre-Approved" className='mt-4 mt-lg-0' style={{  borderRadius:'15px' }} />
               </div>
             </div>
 
-            <div className="row f-section">
+            <div className="row mt-5 shadow " style={{ margin: 0 ,borderRadius:'15px' }} >
               <div className="col-md-6" style={{ paddingLeft: 0 }}>
-                <img src="https://autobunny-docs.s3.ca-central-1.amazonaws.com/common/design/cta/f-2parts4.png" alt="Get Pre-Approved" />
+                <img src="https://autobunny-docs.s3.ca-central-1.amazonaws.com/common/design/cta/f-2parts4.png" alt="Get Pre-Approved"   style={{ margin: 0 ,borderRadius:'15px' }}/>
               </div>
-              <WarrantySection
-                title="Manufacturer’s Warranty"
-                description={['Refers to manufacturer’s basic Powertrain Warranty.']}
-                listItems={['Engine', 'Transmission', 'Drive axle']}
-              />
+              <div className='pt-5 '>
+                <WarrantySection
+                  title="Manufacturer’s Warranty"
+                  description={['Refers to manufacturer’s basic Powertrain Warranty.']}
+                  listItems={['Engine', 'Transmission', 'Drive axle']}
+                />
+              </div>
             </div>
 
-            <div className="row f2-section">
+            <div className="row mt-5 p-4">
               <div className="col-md-12">
-                <h2>Extended Warranty</h2>
+                <h2 className='font-weight-bold'>Extended Warranty</h2>
               </div>
               <div className="col-md-4">
                 <ul className="inner-list">
@@ -116,7 +114,7 @@ const VehicleProtectionComponent = () => {
               </div>
             </div>
 
-            <div className="row f2-section">
+            <div className="row mt-5 p-4">
               <div className="col-md-6" style={{ paddingRight: 0 }}>
                 <img src="https://autobunny-docs.s3.ca-central-1.amazonaws.com/1042/web-content/GAP-Insurance.png" alt="GAP Insurance" />
               </div>
@@ -130,17 +128,19 @@ const VehicleProtectionComponent = () => {
               />
             </div>
 
-            <div className="row f3-section">
-              <div className="col-md-12">
-                <h2>Protect yourself</h2>
+            <div className='mt-5 p-5' >
+            <div className="row shadow " style={{borderRadius:'15px'}} >
+              <div className="col-md-12 p-5 ">
+                <h2 className='text-center font-weight-bolder'>Protect yourself</h2>
               </div>
-              <div className="col-md-12">
-                <p>Get in touch with us to learn more about our protection plans.</p>
+              <p className='mt-3 col-md-12 text-center' style={{fontSize:'14px'}}>Get in touch with us to learn more about our protection plans.</p>
+              <div className="col-md-12  d-flex flex-column flex-md-row justify-content-center align-items-center g pt-2 pb-5">
+                <div className="btn-low-center w-100 text-center">
+                  <a className="btn text-white px-4 by-2 w-md-25"  title="Browse All Vehicles" href="used-cars" style={{backgroundColor:'#ff271e'}}>
+                    Contact Us
+                  </a>
+                </div>
               </div>
-              <div className="col-md-12" style={{ paddingRight: 0 }}>
-                <a className="btn" title="Contact Us" href="contact-us">
-                  Contact Us
-                </a>
               </div>
             </div>
           </div>

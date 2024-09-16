@@ -66,7 +66,7 @@ const FooterCustomerWeb = React.forwardRef((props, ref) => {
               className="row w-100 p-0 px-2 px-md-0 justify-content-center"
             
             >
-              <div className="p-0 m-0 col-12 col-md-12  col-xl-10 row  footer-style-in-tablet pt-xl-3  justify-content-center">
+              <div className="p-0 m-0 col-12 col-md-12  col-xl-10 row my-5 px-4 footer-style-in-tablet pt-xl-3  justify-content-center">
                 {/* <div className="p-0 m-0 row col-lg-3 col-12 p-lg-2 ">
                   <div className="p-0 m-0 col-12   pr-2">
                     <h3 className="p-0 m-0 pb-2 footer_title_container">
@@ -87,12 +87,12 @@ const FooterCustomerWeb = React.forwardRef((props, ref) => {
                     </div>
                   </div>
                 </div> */}
-                <div className="p-0 m-0 row w-100 col-lg-3 col-md-6 p-lg-2 col-12 mt-3 mt-lg-0 px-lg-4 ">
+                <div className="p-0 m-0 row w-100 col-md-6 p-lg-2 col-12 mt-3 mt-lg-0 px-lg-4 ">
                   <div className="p-0 m-0  ">
                     <OperationHoures timeWork={timeWork} type="1" />
                   </div>
                 </div>
-                <div className="p-0 m-0 row w-100 col-lg-3 col-md-6 col-12 mt-3 mt-lg-0 p-lg-2">
+                <div className="p-0 m-0 row w-100  col-md-6 col-12 mt-3 mt-lg-0 p-lg-2">
                   <div className="p-0 m-0 col-12 col-lg-12">
                     {" "}
                     <div className="p-0 m-0  d-flex flex-column justify-content-lg-between col-12">
@@ -125,7 +125,7 @@ const FooterCustomerWeb = React.forwardRef((props, ref) => {
                             </a>
                           </Link>
                         </div>
-                        {data?.business_phone2 ? (
+                        {/* {data?.business_phone2 ? (
                           <div className=" p-0 m-0 d-flex py-1 footer_desc_container justlfy-content-center align-items-center ">
                             <FaPhone color="#fff" className="" />
                             <a
@@ -137,9 +137,11 @@ const FooterCustomerWeb = React.forwardRef((props, ref) => {
                               {data?.business_phone2}
                             </a>
                           </div>
-                        ) : null}
+                        ) : null} */}
+                        
+                      {/* TODO:use dangerouslySetInnerHTML */}
 
-                        <div className=" p-0 m-0 py-1 d-flex footer_desc_container justify-content-between align-items-between ">
+                        {/* <div className=" p-0 m-0 py-1 d-flex footer_desc_container justify-content-between align-items-between ">
                           <Link href="/directions">
                             <a>
                               {" "}
@@ -152,7 +154,7 @@ const FooterCustomerWeb = React.forwardRef((props, ref) => {
                               </span>
                             </a>
                           </Link>
-                        </div>
+                        </div> */}
                         <div className=" p-0 m-0 d-flex py-1 footer_desc_container justlfy-content-center align-items-center ">
                           <FaPhone color="#fff" className="" />
                           <a

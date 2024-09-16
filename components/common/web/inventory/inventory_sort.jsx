@@ -23,7 +23,7 @@ const InventorySortVehicles = ({showMobileFilter,setShowMobileFilter}) => {
             <button
               type="button"
               disabled={loading}
-              className={`m-0 mb-2 px-md-3 inventory_sort_button__container ${
+              className={`m-0 mb-2 px-md-3 inventory_sort_button__container  ${
                 formik.values.sortKind.kind === "sortMake" &&
                 formik.values.sortKind.order === 1
                   ? "ASC"

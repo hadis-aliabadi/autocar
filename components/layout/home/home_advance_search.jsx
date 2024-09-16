@@ -94,7 +94,7 @@ export const HomeAdvanceSearch = (props) => {
                 style={reactSelectInputStyleHome}
                 options={makeOptions}
                 name={"make"}
-                placeholder={"MAKE"}
+                placeholder={"Any Make"}
                 formik={formik}
                 onChange={(e) => {
                   formik.setFieldValue("make", e?.value);
@@ -126,7 +126,7 @@ export const HomeAdvanceSearch = (props) => {
                 style={reactSelectInputStyleHome}
                 options={modelOptions}
                 name={"model"}
-                placeholder={"MODEL"}
+                placeholder={"Any Model"}
                 formik={formik}
                 className="w-100 my-lg-2 mt-2 border-sm-right border-dark  "
               />
@@ -136,7 +136,7 @@ export const HomeAdvanceSearch = (props) => {
                 style={reactSelectInputStyleHome}
                 options={yearOptions}
                 name={"Minyear"}
-                placeholder={"MIN YEAR"}
+                placeholder={"Min Year"}
                 formik={formik}
                 className="w-100 my-lg-2 mt-2 border-sm-right border-dark"
               />
@@ -146,7 +146,7 @@ export const HomeAdvanceSearch = (props) => {
                 style={reactSelectInputStyleHome}
                 options={yearOptionsSort.sort((a, b) => b.label - a.label)}
                 name={"Maxyear"}
-                placeholder={"MAX YEAR"}
+                placeholder={"Max Year"}
                 formik={formik}
                 className="w-100 my-lg-2 mt-2 "
               />
@@ -161,9 +161,9 @@ export const HomeAdvanceSearch = (props) => {
               <div className=" m-0 py-2 px-1  d-flex w-100 h-100 justify-content-center align-items-center">
                 <div
                   className="py-2 blue_button_3 h-100 d-flex w-100 align-items-center justify-content-center"
-                  style={{ backgroundColor: "#e74c3c", borderColor: "#e74c3c" }}
+                  style={{ backgroundColor: "#ee161b", borderColor: "#e74c3c" }}
                 >
-                  SEARCH
+                 <FaSearch className='text-white' />  <span className="px-2">Search</span>
                 </div>
               </div>
             </a>

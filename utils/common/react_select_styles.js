@@ -436,7 +436,7 @@ export const reactSelectInputStyleHome = {
     color: "#000",
     right: "100px",
     outLine: "none",
-    backgroundColor: "transparent",
+    backgroundColor: "#eeeeee",
 
     "&:hover": {
       color: "#000",
@@ -445,11 +445,11 @@ export const reactSelectInputStyleHome = {
 
   control: (base, state) => ({
     ...base,
-    backgroundColor: "transparent",
+    backgroundColor: "#eeeeee",
     borderRadius: "5px",
     color: "#fff",
     border: "none !important",
-    fontSize: "14px",
+    fontSize: "13px",
     borderRadius: "5px",
     // top: "50%",
     // transform: "translateY(-50%)",
@@ -460,10 +460,10 @@ export const reactSelectInputStyleHome = {
     return {
       ...style,
       // ...colorBoxForReactSelect(data?.colorObject?.code),
-      backgroundColor: "#fff",
+      backgroundColor: "#eeeeee",
       color: "#000",
       cursor: "pointer",
-      fontSize: "14px",
+      fontSize: "13px",
       border: "none",
     };
   },
@@ -482,9 +482,9 @@ export const reactSelectInputStyleHome = {
     color: "#000",
     border: "none",
     backgroundColor: "transparent",
-    fontWeight:"600",
+    fontWeight:"bold",
     letterSpacing:"0",
-    fontSize:"15px"
+    fontSize:"13px"
   }),
   IndicatorsContainer: (styles) => ({
     ...styles,
@@ -521,8 +521,8 @@ export const reactSelectInputStyleHome = {
     ...provided,
     bottom: "0",
 
-    background: "#fff",
-    boxShadow: "0 2px 10px rgba(0, 0, 0, 0.16)",
+    background: "#eeeeee",
+    // boxShadow: "0 2px 10px rgba(0, 0, 0, 0.16)",
     height: "50px",
     padding: "3px 0",
     borderRadius: "3px !important",

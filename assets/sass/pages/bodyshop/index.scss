@@ -203,7 +203,7 @@ mark {
 
 .google_review_card_childe-style {
   .google_review_card-style {
-    background-color: #fff !important;
+    background-color: #f6f6f6 !important;
     text-align: center;
     margin: 15px 15px;
     position: relative;
@@ -607,7 +607,7 @@ p {
   line-height: 1.1;
   font-weight: 700;
   font-family: "Open Sans";
-  color: #ececec !important;
+  // color: #ececec !important;
   font-size: 32px;
 margin-bottom: 50px;
   @include tablet {
@@ -619,17 +619,17 @@ margin-bottom: 50px;
   }
   position: relative;
 
-  &::after {
-    content: "";
-    width: 80px;
-    height: 3px;
-    border-top: 3px solid #e74c3c;
-    margin: 10px auto 15px;
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  // &::after {
+  //   content: "";
+  //   width: 80px;
+  //   height: 3px;
+  //   border-top: 3px solid #e74c3c;
+  //   margin: 10px auto 15px;
+  //   position: absolute;
+  //   bottom: -30px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
 }
 .linkto_img_container_q-3 {
   position: relative;

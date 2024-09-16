@@ -1,28 +1,36 @@
 import Link from "next/link";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleRight, FaCalendar, FaCarAlt, FaDollarSign, FaRetweet } from "react-icons/fa";
 
 const HomeDepartments = (props) => {
   const { dealerData } = props;
   const cardsData = [
     {
-      title: "Card 1",
-      description: "This is the description for card 1",
-      imageSrc: "/images/card1.jpg",
+      title: "Pre-Owned Inventory",
+      description: "Search For Your Next Vehicle",
+      icon: <FaCarAlt  style={{fontSize:'50px'}}/>,
+      btn:'View Inventory',
+      color:'#d7d7d7'
     },
     {
-      title: "Card 2",
-      description: "This is the description for card 2",
-      imageSrc: "/images/card2.jpg",
+      title: "Trade-In Appraisal",
+      description: "Tell Us About Your Vehicle.",
+      icon: <FaRetweet style={{fontSize:'50px'}}/>,
+      btn:'Get My Apprisal',
+      color:'#f6f6f6'
     },
     {
-      title: "Card 3",
-      description: "This is the description for card 3",
-      imageSrc: "/images/card3.jpg",
+      title: "Get Approved Now",
+      description: "Apply For Financing.",
+      icon: <FaDollarSign style={{fontSize:'50px'}}/>,
+      btn:'Applay Now',
+      color:'#d7d7d7'
     },
     {
-      title: "Card 4",
-      description: "This is the description for card 4",
-      imageSrc: "/images/card4.jpg",
+      title: "Like What You See?",
+      description: "Book A Test Drive Today!",
+      icon: <FaCalendar style={{fontSize:'50px'}}/>,
+      btn:'Book Appointment',
+      color:'#f6f6f6'
     },
   ];
   return (
@@ -212,17 +220,18 @@ const HomeDepartments = (props) => {
       <div className="row g-0 w-100 ">
         {cardsData.map((card, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-3 p-0 w-100">
-            <div className="card h-100 border-0">
-              <img
-                src={card.imageSrc}
-                alt={card.title}
-                width={300}
-                height={200}
-                className="card-img-top"
-              />
-              <div className="card-body">
+            <div className="card  h-100 border-0" style={{backgroundColor:`${card.color}`}}>
+              <div className="d-flex justify-content-center align-items-center p-5">
+                {card.icon}
+              </div>
+              <div className="card-body d-flex flex-column justify-content-center align-items-center">
                 <h5 className="card-title">{card.title}</h5>
-                <p className="card-text">{card.description}</p>
+                <p className="card-text text-center p-4">{card.description}</p>
+              </div>
+              <div className="d-flex p-3 justify-content-center align-items-center ">
+                <button className="p-2 btn text-white w-75 mb-4" style={{backgroundColor:`#ff271e`}}>
+                  <a> {card.btn}</a>
+                </button>
               </div>
             </div>
           </div>

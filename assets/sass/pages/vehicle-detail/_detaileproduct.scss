@@ -203,19 +203,19 @@
 
 .title_our_brands_home_2 {
   @include xldesktop {
-    @include all_fonts_styles(40px, 700, $second-font, #000);
+    @include all_fonts_styles(30px, 600, $main-font, #000);
   }
 
   @include desktop {
-    @include all_fonts_styles(32px, 700, $second-font, #000);
+    @include all_fonts_styles(30px, 500, $main-font, #000);
   }
 
   @include tablet {
-    @include all_fonts_styles(24px, 700, $second-font, #000);
+    @include all_fonts_styles(30px, 500, $main-font, #000);
   }
 
   @include mobile {
-    @include all_fonts_styles(22px, 700, $second-font !important, #000);
+    @include all_fonts_styles(30px, 500, $main-font !important, #000);
   }
 }
 // }

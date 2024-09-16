@@ -9,23 +9,24 @@ import {
   FaTiktok,
   FaFacebookF,
   FaPhoneAlt,
+  FaMapMarker,
+  FaFacebookSquare,
 } from "react-icons/fa";
-import { RiMenu2Line } from "react-icons/ri";
+
 import { TfiClose } from "react-icons/tfi";
 import { CiMenuFries } from "react-icons/ci";
-import { PiMapPinLineLight } from "react-icons/pi";
-import { MdEmail, MdOutlinePhoneEnabled } from "react-icons/md";
 
-import { TiLocationOutline } from "react-icons/ti";
-import { FaBurger, FaLocationPin, FaXTwitter } from "react-icons/fa6";
-import { TfiAlarmClock } from "react-icons/tfi";
+import { MdEmail} from "react-icons/md";
 
-import { FiPhone } from "react-icons/fi";
+import { FaLocationPin, FaXTwitter } from "react-icons/fa6";
+
 
 import NavLink from "./NavLink";
 import { phonenumberConvertor } from "../../../../utils/common/phone_number_converter";
 import { useRouter } from "next/router";
 import MenuLinks from "../../../../data/menuData";
+import { BiSolidMessageRounded } from "react-icons/bi";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const HeaderCustomerWeb = React.forwardRef((props, ref) => {
   const { data } = props;
@@ -64,43 +65,99 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
   return (
     <>
       <div
-        className={` p-0 m-0 col-12 header_background_style_1   ${
-          router.pathname === "/asd"
-            ? "mb-0 home_header_position"
-            : "bg-dar header_background_black"
-        }`}
+        className={` p-0 m-0 col-12 header_background_style_1 `}
         ref={ref}
       >
         <div
           className="p-0  col-12 m-0 d-lg-none row"
           style={{ position: "relative" }}
         >
-          <div className="d-flex flex-column flex-shrink justify-content-between align-items-center w-100 px-2 px-sm-4 ">
-            <div className="p-0 m-0 py-2 d-flex justify-content-center text-center w-100">
+          <div className="d-flex flex-column flex-shrink justify-content-between align-items-center w-100  ">
+            <div className="px-3 my-2 m-0  d-flex justify-content-between align-items-start text-center w-100">
               <Link href={"/"}>
                 <a className="logo_fixed_size">
                   <img
-                    className="logo_fixed_size"
+                    className=""
                     // src={`${data?.prefixUrl + data?.logo_url}`}
                     src="https://autobunny-docs.s3.ca-central-1.amazonaws.com/1042/web-content/Logo.png"
                     alt=""
+                    style={{width:'150px', height:'100px'}}
                   />
                 </a>
               </Link>
+              <div
+                onClick={() => setShowMobile((prev) => !prev)}
+                className="p-0 m-0 d-flex justify-content-end px-1 h-100 pr-0 pt-0 align-items-center  "
+              >
+                {showMobile ? (
+                  <div className="p-0 m-0 py-1 mr-2 ml-4">
+                    <GiHamburgerMenu   size={30} />
+                  </div>
+                ) : (
+                  <div className="p-0 m-0 py-1 mr-2 ml-4">
+                    <GiHamburgerMenu   size={30} />
+                  </div>
+                )}
+              </div>
             </div>
+            <div className="p-0 m-0 row w-100 px-0 text-dark d-flex justify-content-between align-items-center">
+            {showMobile && (
+              <div
+                className={`p-0 m-0 pt-5 col-12 d-flex flex-column justify-content-start align-items-start mobile_menu_container ${
+                  showMobile && "mobile_menu_container_open py-2"
+                }
+                ${
+                  router.pathname === "/asd"
+                    ? bgColor
+                      ? " d-lg-none"
+                      : " "
+                    : bgColor
+                    ? " d-lg-none"
+                    : " d-lg-none"
+                }
+                `}
+              >
+                {MenuLinks.map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="p-0 m-0 d-flex w-100 justify-content-between align-items-start text-left px-4"
+                      
+                    >
+                      <NavLink
+                        type={item?.subLinks?.length > 0 ? 0 : 1}
+                        {...item}
+                        isMobile
+                        setShowMobile={setShowMobile}
+                        showMobile={showMobile}
+                        setParent={setParent}
+                        parent={parent}
+                        parentId={index}
+                        className=" header_a__navlink header_a__navlink_mobile py-2 "
+                        disabledDesktopClass={true}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
             <div
-              className="d-flex w-100 justify-content-around align-items-center"
-              style={{ borderTop: "1px solid #ccc" }}
+              className="py-2 d-flex w-100 justify-content-around align-items-center mobile-header"
+              // style={{ borderTop: "1px solid #ccc" }}
             >
+              <div className="h-100" >
+                {" "}
+              </div>
               <Link href="/directions">
                 <a rel="noreferrer">
-                  <PiMapPinLineLight
+                  <FaPhoneAlt
                     className="p-0 m-0 svg_icons_sizing mx-2"
-                    style={{ color: "#e74c3c" }}
+                    style={{ color: "#dddddd" }}
                   />{" "}
                 </a>
               </Link>
-              <div className="h-100" style={{ borderRight: "1px solid #ccc" }}>
+              <div className="h-100" >
                 {" "}
               </div>
               <Link
@@ -109,77 +166,38 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                 rel="noopener noreferrer"
               >
                 <a>
-                  <MdOutlinePhoneEnabled
+                  <FaMapMarker
                     className="p-0 m-0 svg_icons_sizing mx-2"
-                    style={{ color: "#e74c3c" }}
+                    style={{ color: "#dddddd" }}
                   />
                 </a>
               </Link>
-              <div className="h-100" style={{ borderRight: "1px solid #ccc" }}>
+              <div className="h-100" >
                 {" "}
               </div>
-              <div
-                onClick={() => setShowMobile((prev) => !prev)}
-                className="p-0 m-0 d-flex justify-content-end px-1 h-100 pr-0 pt-0 align-items-center  "
+              <Link
+                // href="/about-us"
+                href={phonenumberConvertor(props?.data?.business_phone)}
+                rel="noopener noreferrer"
               >
-                {showMobile ? (
-                  <div className="p-0 m-0 py-1 mr-2 ml-4">
-                    <TfiClose color="#e74c3c" size={25} />
-                  </div>
-                ) : (
-                  <div className="p-0 m-0 py-1 mr-2 ml-4">
-                    <CiMenuFries color="#e74c3c" size={25} />
-                  </div>
-                )}
+                <a>
+                  <BiSolidMessageRounded
+                    className="p-0 m-0 svg_icons_sizing mx-2"
+                    style={{ color: "#dddddd" }}
+                  />
+                </a>
+              </Link>
+              <div className="h-100" >
+                {" "}
               </div>
             </div>
           </div>
         </div>
-        <div className="p-0 m-0 row w-100 px-0 px-md-4 px-lg-5 d-flex justify-content-between align-items-center">
-          {showMobile && (
-            <div
-              className={`p-0 m-0 pt-5 col-12 d-flex flex-column justify-content-start align-items-start mobile_menu_container ${
-                showMobile && "mobile_menu_container_open py-2"
-              }
-              ${
-                router.pathname === "/asd"
-                  ? bgColor
-                    ? " d-lg-none"
-                    : " "
-                  : bgColor
-                  ? " d-lg-none"
-                  : " d-lg-none"
-              }
-              `}
-            >
-              {MenuLinks.map((item, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="p-0 m-0 d-flex w-100 justify-content-between align-items-start text-left px-4"
-                  >
-                    <NavLink
-                      type={item?.subLinks?.length > 0 ? 0 : 1}
-                      {...item}
-                      isMobile
-                      setShowMobile={setShowMobile}
-                      showMobile={showMobile}
-                      setParent={setParent}
-                      parent={parent}
-                      parentId={index}
-                      className=" header_a__navlink header_a__navlink_mobile py-2 "
-                      disabledDesktopClass={true}
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          )}
-        </div>
+        
          
         <div className="p-0 m-0 d-none  d-lg-flex row w-100 justify-content-center align-items-start ">
           <div className=" col-12 p-0 m-0 row justify-content-lg-center g-0">
-            <div className="p-0 m-0 px-2 px-lg-1 px-xl-5 col-9 col-lg-12 d-none d-lg-flex flex-column pb-lg-4 pt-lg-3">
+            <div className="p-0 m-0  px-lg-1 px-xl-5 col-9 col-lg-12 d-none d-lg-flex flex-column  py-lg-2">
               <div className="p-0 m-0 col-12 py-0 d-flex flex-warp justify-content-end align-items-center">
                 <div className="p-0 m-0 d-flex flex-row col-12 justify-content-center flex-wrap">
                   <div className="p-0 m-0 col-12 row justify-content-between align-items-start ">
@@ -196,8 +214,9 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                       </Link>
                     </div>
 
-                    <div className="col-9 d-flex flex-column justify-content-end align-items-end  ">
-                      <div className="p-0 m-0 d-flex text-center justify-content-end align-items-end ">
+                    <div className="col-9 d-flex flex-column justify-content-end align-items-end mt-5">
+                      {/* contact */}
+                      <div className="p-0 m-0 d-flex text-center justify-content-end align-items-end mr-4">
                         <span className="d-flex  align-items-center pr-2 pt-1">
                           <FaLocationPin
                             color="#ed1f24"
@@ -241,13 +260,13 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                             {data?.business_phone}
                           </a>
                         </span>
-                      
+                        <FaFacebookSquare size={25} />
+                        <FaInstagram size={25} />
                       </div>
-                     
-                      <div className="p-0 m-0 d-flex text-center justify-content-end align-items-end ">
-                        {/* TODO:check back data */}
+                      {/* <div className="p-0 m-0 d-flex text-center justify-content-end align-items-end ">
+                       
 
-                        {/* <span className="d-flex  align-items-center pr-2 pt-1">
+                        <span className="d-flex  align-items-center pr-2 pt-1">
                           <TiLocationOutline
                             color="#e74c3c"
                             size={17}
@@ -261,8 +280,8 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                           >
                             {props?.data?.business_caption}
                           </a>
-                        </span> */}
-                      </div>
+                        </span>
+                      </div> */}
                       <div className="p-0 m-0 d-flex text-center justify-content-end align-items-end ">
                       
                          {/* Social Media */}
@@ -385,34 +404,28 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                         </span> */}
                       
                       </div>
-                     
+
+                      {/* navbar */}
+                      <div
+                        className=" d-flex justify-content-between align-items-center  m-0 w-75 mt-4"
+                      >
+                        {MenuLinks.map((item, index) => {
+                          return (
+                            <NavLink
+                              key={index}
+                              type={item?.subLinks?.length > 0 ? 0 : 1}
+                              {...item}
+                              className=" header_a__navlink  "
+                            />
+                          );
+                        })}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              className={`"  flex-wrap justify-content-between align-items-center py-2  p-0 m-0" ${
-                router.pathname === "/sdf"
-                  ? bgColor
-                    ? " menu_bg1 d-flex col-12"
-                    : " menu_bg d-none "
-                  : bgColor
-                  ? " menu_bg1 d-flex col-12"
-                  : " menu_bg2 d-flex col-lg-7 col-xl-8 px-xl-3 pr-lg-3 pr-xl-5"
-              }`}
-            >
-              {MenuLinks.map((item, index) => {
-                return (
-                  <NavLink
-                    key={index}
-                    type={item?.subLinks?.length > 0 ? 0 : 1}
-                    {...item}
-                    className=" header_a__navlink  "
-                  />
-                );
-              })}
-            </div>
+            
           </div>
         </div>
       </div>

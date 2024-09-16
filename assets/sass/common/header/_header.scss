@@ -13,13 +13,10 @@ p {
   }
 }
 .header_background_style_1 {
-  // position: absolute;
-  background-color: transparent;
-  // border-bottom: 1px solid #111112;
-  
 
+  background-color:#f6f6f6;
   z-index: 98;
-  color: white;
+ 
 }
 .header_background_black {
   // position: relative !important;
@@ -40,7 +37,7 @@ p {
   transition: 0.5s;
 }
 .menu_bg1 {
-  background: rgba(255, 255, 255, 1);
+  background: rgb(17, 0, 0);
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   position: fixed;
@@ -66,14 +63,15 @@ p {
 .header_a__navlink {
   
   white-space: nowrap;
-  @include all_fonts_styles(14px, 300, $main-font, #000);
+  @include all_fonts_styles(14px, 500, $main-font, #000);
   letter-spacing:0;
 
   &:hover {
-    @include all_fonts_styles(14px, 300, $main-font, $main-color);
+    
+    @include all_fonts_styles(14px,500, $main-font, $main-color);
 
     .header_a__navlink_submenu_container {
-      opacity: 1;
+      
       z-index: 561456148956145;
       transform: translateY(0);
       pointer-events: all;
@@ -83,7 +81,6 @@ p {
         transform: translateY(0);
         opacity: 1;
         height: auto;
-        box-shadow: -2px 6px 10px 0px rgb(105 103 103);
         color: #111112;
       }
     }
@@ -137,7 +134,7 @@ p {
 }
 
 .svg_icons_sizing {
-  color: $main-color !important;
+  
   @include tablet {
     width: 25px;
     height: 25px;
@@ -155,15 +152,16 @@ p {
 }
 
 .header_a__active {
-  @include all_fonts_styles(14px, 600, $main-font, $main-color);
-  @media screen and(min-width: 991px) and(max-width: 1124px) {
-    @include all_fonts_styles(14px, 600, $main-font, $main-color !important);
-  }
-  @media screen and(min-width: 1125px) and(max-width: 1300px) {
-    @include all_fonts_styles(14px, 600, $main-font, $main-color !important);
-  }
+  animation: blinker 1s linear infinite;
+  // @include all_fonts_styles(14px, 600, $main-font, $main-color);
+  // @media screen and(min-width: 991px) and(max-width: 1124px) {
+  //   @include all_fonts_styles(14px, 600, $main-font, $main-color !important);
+  // }
+  // @media screen and(min-width: 1125px) and(max-width: 1300px) {
+  //   @include all_fonts_styles(14px, 600, $main-font, $main-color !important);
+  // }
   @include mobile {
-    @include all_fonts_styles(14px, 600, $main-font, $main-color !important);
+    @include all_fonts_styles(14px, 500, $main-font, #000 !important);
   }
 }
 
@@ -172,7 +170,7 @@ p {
   z-index: 2;
 
   &:hover {
-    @include all_fonts_styles(14px, 600, $main-font, $white-color !important);
+    @include all_fonts_styles(14px, 500, $main-font, #000 !important);
   }
 }
 
@@ -206,13 +204,13 @@ p {
 
 @include tablet {
   .header_a__navlink_mobile {
-    @include all_fonts_styles(14px, 600, $main-font, $white-color);
+    @include all_fonts_styles(14px, 500, $main-font, #000);
     letter-spacing: 1px;
 
     width: 100%;
 
     &:hover {
-      @include all_fonts_styles(14px, 600, $main-font, $white-color !important);
+      @include all_fonts_styles(14px, 500, $main-font, #000 !important);
     }
 
     p {
@@ -226,13 +224,13 @@ p {
 }
 @include mobile {
   .header_a__navlink_mobile {
-    @include all_fonts_styles(14px, 600, $main-font, $white-color);
+    @include all_fonts_styles(14px, 500, $main-font, #000);
     letter-spacing: 1px;
 
     width: 100%;
 
     &:hover {
-      @include all_fonts_styles(14px, 600, $main-font, $white-color !important);
+      @include all_fonts_styles(14px, 500, $main-font,#000 !important);
     }
 
     p {
@@ -311,27 +309,22 @@ p {
   height: 0;
   overflow: visible;
   display: none;
-  color: #2d2d2d !important;
+  color: #000 !important;
   // transition: height 0.5s ease-in-out;
 }
 
 .mobile_menu_container_open {
-  // background-color: #111112 !important;
-  color: #3f2972 !important;
-  @include all_fonts_styles(19px, 600, inherit, $black-color);
+  
+  color: #000 !important;
+  @include all_fonts_styles(14px, 400, inherit, #000 !important) ;
   height: fit-content;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
+  background-color: #f6f6f6 ;
   display: block;
   transition: height 0.5s ease-in-out;
-  position: absolute;
-  // transform: translateY(93%);
-
-  top: 100%;
-
-  right: 0;
   width: 100vw;
   z-index: 140 !important;
-  // box-shadow: -2px 6px 10px 0px rgba(0, 0, 0, 1);
+  border-top: 2px solid #e7e7e7;
+
 }
 
 .address_text_container {
@@ -524,4 +517,10 @@ p {
   &:hover{
     color:$main-color;
   }
+}
+
+.mobile-header {
+  border-bottom: 4px solid #2c2c2c;
+  background-image: -webkit-linear-gradient(top, #666 0, #222 100%);
+  color: #dddddd !important;
 }

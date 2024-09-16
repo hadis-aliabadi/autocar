@@ -62,9 +62,8 @@ const QuickSearchHome = () => {
             <h2 className="special-title text-uppercase">
               {" "}
               QUICK SEARCH BY BODY TYPE
-              
             </h2>
-            <div className="short"></div>
+            
           </div>
           {/* <div className="p-0 pb-5 m-0 col-12 d-flex justify-content-center">
             <div className="p-0 m-0 col-lg-12 col-12 row justify-content-center align-items-center">
@@ -95,7 +94,7 @@ const QuickSearchHome = () => {
                   <Link href={item.link}>
                     <a className="p-0 m-0 scale_hover_sistem">
                       <img  src={item.imageSrc} alt="" />
-                      <div className="p-0 m-0 pt-2 w-100 text-center " style={{ fontSize:"17px",fontWeight:700,color:"white"}}>
+                      <div className="p-0 m-0 pt-2 w-100 text-center " style={{ fontSize:"17px",fontWeight:600,color:"black"}}>
                         {item.label}
                       </div>
                     </a>

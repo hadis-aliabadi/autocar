@@ -184,7 +184,7 @@ const Cars = (props) => {
       } m-0 w-100 pt-5 pt-lg-0`}
     >
       <div className="p-0 m-0 mt-lg-0 col-12 w-100 d-flex flex-wrap jsutify-content-center align-items-center ">
-        <span className="p-0 pl-1 pl-lg-4 m-0 row w-100 inventory_count_div__container text-center">
+        <span className="p-0 pl-1 pl-lg-4 m-0 row w-100 inventory_count_div__container text-center mb-3">
           {posts[0]?.fullSearchCount} Vehicles
         </span>
         <div className="d-flex flex-wrap col-12 justify-content-between p-2" style={{backgroundColor:"#ed1f24"}}>
@@ -206,7 +206,8 @@ const Cars = (props) => {
                 onClick={() => {
                   setCartView(false);
                 }}
-                color={cartView ? "#616161" : "#fff"}
+                // color={cartView ? "#616161" : "#fff"}
+                color="#fff"
                 size={16}
                 className="view_stack "
               />

@@ -9,6 +9,8 @@ import { calculateYear } from "../../../../utils/common/calculate_year";
 import { useRouter } from "next/router";
 import Search from "../../../layout/home/search/search";
 import { priceComma } from "../../../../utils/common/price_odometer_handler";
+import { IoIosArrowForward } from "react-icons/io";
+
 SwiperCore.use([Navigation, Thumbs, Autoplay, Pagination]);
 const AdvanceFilter = (props) => {
   const {
@@ -263,14 +265,16 @@ const AdvanceFilter = (props) => {
   const [closeClass, setCloseClass] = useState("mt-3");
   return (
     <>
-      <div
-        class="AskAva-cta"
-        data-product="creditTool"
-        data-type="banner"
-      ></div>
-    <h3 className="px-3 advance-filter__title">
-    Used Cars For Sale in Mississauga, Ontario
-    </h3>
+     <div className="d-flex justify-content-center align-items-center my-4">
+      <p className="px-2">
+        Did not find what your looking for?
+      </p>
+      <a href="#">
+        <button className="btn text-white " style={{backgroundColor:'#e71d15'}}>
+          Click Here To Let Us Know  <IoIosArrowForward className="  font-weight-bolder"/>
+        </button>
+      </a>
+    </div>
     <form
       style={{
         backgroundColor: "#fff",
@@ -954,10 +958,10 @@ const AdvanceFilter = (props) => {
               type="submit"
               className="py-2 home_inevntpry_search_button__search home_inevntpry_search_button__search--inventory d-flex w-100 align-items-center justify-content-center"
             >
-              Search
+              Search <FaSearch className="ml-2"/>
             </button>
           </div>
-          <div className="p-1 size-1 d-none d-lg-block">
+          {/* <div className="p-1 size-1 d-none d-lg-block">
             <button
               onClick={() => {
                 formik.resetForm();
@@ -1005,7 +1009,7 @@ const AdvanceFilter = (props) => {
             >
               All Inventory
             </button>
-          </div>
+          </div> */}
           <div
             className={`NN p-1 d-block d-lg-none ${
               typeof otherFormik !== "undefined" ? "size-1" : "size-1"
@@ -1120,10 +1124,10 @@ const AdvanceFilter = (props) => {
               type="submit"
               className="py-2 h-100 home_inevntpry_search_button__search home_inevntpry_search_button__search--inventory d-flex w-100 align-items-center justify-content-center"
             >
-              Search
+              <FaSearch className="mr-2"/> Search
             </button>
           </div>
-          <div className="RESET p-1 col-12 size-1 d-block d-lg-none">
+          {/* <div className="RESET p-1 col-12 size-1 d-block d-lg-none">
             <button
               onClick={() => {
                 formik.resetForm();
@@ -1171,7 +1175,7 @@ const AdvanceFilter = (props) => {
             >
                All Inventory
             </button>
-          </div>
+          </div> */}
           {/* <div
           style={{ position: "relative" }}
           className="p-0 m-0 col-12 pb-4  my-4 px-2 my-lg-3 ">

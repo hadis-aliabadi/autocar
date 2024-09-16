@@ -8,10 +8,10 @@ SwiperCore.use([Pagination]);
 const GoogleReviewsHomePage = () => {
   return (
     <div className="py-5 p-0 col-12  background_style-googlereview googlereview ">
-      <div className="w-100 d-flex flex-column justify-content-center p-0 m-0 w-100 text-center">
-        <h3 className="p-0 m-0 title_our_brands_home_2 pb-3 mt-5 mt-md-0 text-center">
-          Google Reviews
-        </h3>
+      <div className="w-100 d-flex flex-column justify-content-center p-0 m-0 w-100 text-center mb-5">
+        <h5 className="p-0 m-0 title_our_brands_home_2 pb-3 mt-5 mt-md-0 text-center">
+          Customer Reviews
+        </h5>
         <p className="px-3 googlereview-desc " style={{ fontSize: "14px" }}>
           We are committed to making you a long-lasting customer and friend
         </p>
