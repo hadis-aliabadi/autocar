@@ -193,15 +193,13 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
             </div>
           </div>
         </div>
-        
-         
         <div className="p-0 m-0 d-none  d-lg-flex row w-100 justify-content-center align-items-start ">
           <div className=" col-12 p-0 m-0 row justify-content-lg-center g-0">
-            <div className="p-0 m-0  px-lg-1 px-xl-5 col-9 col-lg-12 d-none d-lg-flex flex-column  py-lg-2">
-              <div className="p-0 m-0 col-12 py-0 d-flex flex-warp justify-content-end align-items-center">
+            <div className="p-0 m-0  px-xl-5 col-9 col-lg-12 d-none d-lg-flex flex-column " >
+              <div className="p-0 m-0 col-12 d-flex flex-warp justify-content-end align-items-center">
                 <div className="p-0 m-0 d-flex flex-row col-12 justify-content-center flex-wrap">
                   <div className="p-0 m-0 col-12 row justify-content-between align-items-start ">
-                    <div className="col-3 text-left d-flex">
+                    <div className="p-0 m-0 col-3 text-left d-flex">
                       <Link href="/">
                         <a className="">
                           <img
@@ -209,14 +207,15 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                             // src={`${data?.prefixUrl + data?.logo_url}`}
                             src="https://autobunny-docs.s3.ca-central-1.amazonaws.com/1042/web-content/Logo.png"
                             alt=""
+                            style={{height:'95px',width:'195px',marginLeft:'23px',marginTop:'17px',marginBottom:'17px'}}
                           />
                         </a>
                       </Link>
                     </div>
 
-                    <div className="col-9 d-flex flex-column justify-content-end align-items-end mt-5">
+                    <div className="p-0 m-0 col-9 d-flex flex-column justify-content-end align-items-end mt-3">
                       {/* contact */}
-                      <div className="p-0 m-0 d-flex text-center justify-content-end align-items-end mr-4">
+                      <div className="p-0 m-0 d-flex text-center justify-content-end align-items-end mt-4 mr-4" >
                         <span className="d-flex  align-items-center pr-2 pt-1">
                           <FaLocationPin
                             color="#ed1f24"
@@ -407,7 +406,7 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
 
                       {/* navbar */}
                       <div
-                        className=" d-flex justify-content-between align-items-center  m-0 w-75 mt-4"
+                        className="p-0 m-0 d-flex justify-content-between align-items-center   w-75 mt-4"
                       >
                         {MenuLinks.map((item, index) => {
                           return (

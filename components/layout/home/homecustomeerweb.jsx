@@ -50,7 +50,7 @@ const HomeCustomeerWeb = (props) => {
         data-type="banner"
       ></div> */}
 
-      <div className="d-flex justify-content-center col-12 p-3 m-0  ">
+      <div className="d-flex justify-content-center col-12 mt-5 px-0 " >
         <HomeAdvanceSearch
           vehicleDataForSearch={vehicleDataForSearch}
           advanceSearchData={advanceSearchData}
@@ -77,7 +77,7 @@ const HomeCustomeerWeb = (props) => {
         {/* <HomeFinanceCTA dealerData={dealerData} /> */}
       {/* <HomeWhyUs /> */}
       
-      <div className="col-12 d-flex p-0 m-0 justify-content-center home_fixed_finance_bg  ">
+      <div className="col-12 d-flex p-0 mt-5 justify-content-center home_fixed_finance_bg  " >
         <GoogleReviewsHomePage />
       </div>
       <FindYourCar/>

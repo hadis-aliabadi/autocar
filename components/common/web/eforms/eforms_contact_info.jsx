@@ -16,7 +16,7 @@ const EformsConatctInfo = (props) => {
     >
       <h3 className="contact_info_title2 my-3">Contact Information</h3>
 
-      <span className="contact-e-title"> Location 1: </span>
+    
 
       <p className="p-0 m-0 my-2">
         <FaPhoneAlt color="#000" className="" />

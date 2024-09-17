@@ -42,7 +42,7 @@ const FooterCustomerWeb = React.forwardRef((props, ref) => {
       </div> */}
       
       <div
-        className="p-0 m-0 footer_div_container row g-0 w-100 px-2"
+        className="p-0 m-0 footer_div_container row g-0 w-100 px-3"
         style={{ backgroundColor: "#000" }}
       >
         

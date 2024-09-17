@@ -549,7 +549,7 @@ const AdvanceFilter = (props) => {
               />
             </div>
           </div>
-          {/* <div
+          <div
             className={`p-1 ${
               typeof otherFormik !== "undefined" ? "size-1" : "size-1"
             }  d-lg-block d-none`}
@@ -580,7 +580,7 @@ const AdvanceFilter = (props) => {
                 className="w-100 advance-form-style"
               />
             </div>
-          </div> */}
+          </div>
           <div
             className={`jj p-1 ${
               typeof otherFormik !== "undefined" ? "size-1" : "size-1"
@@ -956,9 +956,10 @@ const AdvanceFilter = (props) => {
                     );
               }}
               type="submit"
-              className="py-2 home_inevntpry_search_button__search home_inevntpry_search_button__search--inventory d-flex w-100 align-items-center justify-content-center"
+              className="py-2 home_inevntpry_search_button__search home_inevntpry_search_button__search--inventory d-flex w-100 align-items-center justify-content-center btn"
+              style={{backgroundColor:'#e71d15'}}
             >
-              Search <FaSearch className="ml-2"/>
+               <FaSearch className="mr-2"/> Search
             </button>
           </div>
           {/* <div className="p-1 size-1 d-none d-lg-block">
@@ -1123,6 +1124,7 @@ const AdvanceFilter = (props) => {
               }}
               type="submit"
               className="py-2 h-100 home_inevntpry_search_button__search home_inevntpry_search_button__search--inventory d-flex w-100 align-items-center justify-content-center"
+              style={{backgroundColor:'#e71d15'}}
             >
               <FaSearch className="mr-2"/> Search
             </button>

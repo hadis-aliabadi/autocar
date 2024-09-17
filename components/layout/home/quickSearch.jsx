@@ -51,17 +51,17 @@ const QuickSearchHome = () => {
 
   return (
     <>
-      <div className="px-0 px-2 px-lg-5 m-0 col-12 col-md-12 py-3  home_fixed_finance_bg home_fixed_finance_bg--quick-search">
+      <div className=" mx-0 my-5 col-12 col-md-12   home_fixed_finance_bg home_fixed_finance_bg--quick-search">
         {/* <div className="bg-dark-category bg-dark-category--slider"></div> */}
 
         <div
-          className="p-0 m-0 w-100 row justify-content-center align-items-center py-4 position-relative"
+          className="p-0 m-0 w-100 row justify-content-center align-items-center position-relative"
           style={{ zIndex: "10" }}
         >
-          <div className="p-0  m-0 text-center mx-auto py-3 pt-lg-5">
-            <h2 className="special-title text-uppercase">
+          <div className="p-0  m-0 text-center mx-auto ">
+            <h2 className="special-title ">
               {" "}
-              QUICK SEARCH BY BODY TYPE
+              Quick Search By Body Style
             </h2>
             
           </div>
@@ -84,12 +84,12 @@ const QuickSearchHome = () => {
               ))}
             </div>
           </div> */}
-          <div className="container ">
+          <div className="container p-0 m-0">
             <div className="row justify-content-center align-items-center">
               {bodyStyleData.map((item, index) => (
                 <div
                   key={index}
-                  className="col-12 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center mb-4"
+                  className="col-12 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center align-items-center"
                 >
                   <Link href={item.link}>
                     <a className="p-0 m-0 scale_hover_sistem">

@@ -81,8 +81,8 @@
 }
 
 .home_inevntpry_search_button__search {
-  @include orange_botton();
-  background-color: transparent;
+ 
+  background-color: #e71d15;
   border-radius: 0px;
   height: 45px !important;
   // border: 1px solid #aba9a9;
@@ -96,15 +96,15 @@
   height: initial !important;
 
 }
-  &:hover {
-    @include all_fonts_styles(14px, $fw-normal, $main-color, $white-color);
-    background-color: $second-blue-color;
-    border: 1px solid $second-blue-color;
+  // &:hover {
+  //   @include all_fonts_styles(14px, $fw-normal, $main-color, $white-color);
+  //   background-color: $second-blue-color;
+  //   border: 1px solid $second-blue-color;
 
-    @include mobile {
-      @include all_fonts_styles(16px, $fw-normal, $main-color, $white-color);
-    }
-  }
+  //   @include mobile {
+  //     @include all_fonts_styles(16px, $fw-normal, $main-color, $white-color);
+  //   }
+  // }
 }
 
 

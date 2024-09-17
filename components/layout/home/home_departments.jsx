@@ -225,7 +225,7 @@ const HomeDepartments = (props) => {
                 {card.icon}
               </div>
               <div className="card-body d-flex flex-column justify-content-center align-items-center">
-                <h5 className="card-title">{card.title}</h5>
+                <h5 className="card-title " style={{fontWeight:'600'}}>{card.title}</h5>
                 <p className="card-text text-center p-4">{card.description}</p>
               </div>
               <div className="d-flex p-3 justify-content-center align-items-center ">

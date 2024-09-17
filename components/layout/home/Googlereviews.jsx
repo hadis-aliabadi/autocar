@@ -9,7 +9,7 @@ const GoogleReviewsHomePage = () => {
   return (
     <div className="py-5 p-0 col-12  background_style-googlereview googlereview ">
       <div className="w-100 d-flex flex-column justify-content-center p-0 m-0 w-100 text-center mb-5">
-        <h5 className="p-0 m-0 title_our_brands_home_2 pb-3 mt-5 mt-md-0 text-center">
+        <h5 className="p-0 m-0 title_our_brands_home_2 pb-3 mt-5 mt-md-0 text-center" style={{fontSize:'27px',fontWeight:'700'}}>
           Customer Reviews
         </h5>
         <p className="px-3 googlereview-desc " style={{ fontSize: "14px" }}>
@@ -45,14 +45,14 @@ const GoogleReviewsHomePage = () => {
           return (
             <SwiperSlide>
               <div
-                className="m-0 p-0 col-12 mt-3 mb-5  google_review_card_childe-style w-100"
-                style={{ height: "370px" }}
+                className=" p-0 col-12 mt-3 mb-5  google_review_card_childe-style w-100"
+                // style={{ height: "370px" }}
               >
                 <fieldset
                   className="google_review_card-style"
-                  style={{ height: "370px" }}
+                  // style={{ height: "370px" }}
                 >
-                  <div className="m-0 p-4 row w-100 h-100 d-flex  justify-content-center align-items-center">
+                  <div className="m-0 p-5 row w-100 h-100 d-flex  justify-content-center align-items-center">
                     <div className="col-12  p-0 m-0 p-0 flex-column flex-md-row d-flex justify-content-center align-items-center ">
                       <div className="col-2 p-0 pb-3 pb-md-0">
                         <img

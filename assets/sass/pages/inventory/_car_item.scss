@@ -383,3 +383,30 @@
     font-size: 4rem;
   }
 }
+
+// .custom-input {
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   height: 22px;
+//   width: 22px;
+//   background-color: #eee; 
+
+
+// }
+
+.custom-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;                     
+  background-color: #eee;
+  border: none; 
+}
+
+.span-style {
+  width: 22px;
+  height: 22px;                     
+  background-color: #eee; 
+}

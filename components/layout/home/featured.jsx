@@ -2,8 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const FeaturedVehicles = () => {
   return (
-    
-      <div className="container">
+    <div className='w-100' style={{margin:'100px 90px 50px 90px'}}>
+      <div className="container ">
         <div className="row d-flex justify-content-center align-items-center">
           <div className="col-12">
             <header className=" d-flex justify-content-center align-items-center">
@@ -15,6 +15,7 @@ const FeaturedVehicles = () => {
           </div>
         </div>
       </div>
+    </div>
   
   );
 };

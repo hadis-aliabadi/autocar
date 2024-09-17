@@ -80,7 +80,7 @@ export const HomeAdvanceSearch = (props) => {
   });
   return (
     <div
-      className="row p-0 m-0 w-100 d-flex row py-lg-5 px-lg-5 px-3 justify-content-center"
+      className="row p-0 m-0 w-100 d-flex row   justify-content-center"
       style={{
         position: "relative",
         zIndex: 8,
@@ -89,7 +89,7 @@ export const HomeAdvanceSearch = (props) => {
       <div className="col-lg-11 row p-0 m-0 ">
         <div className="col-lg-10 p-0 m-0 row">
           <div className="w-100 row p-0 m-0">
-            <div className="p-0 m-0 col-6 col-lg-3 px-1 ">
+            <div className="p-0 m-0 col-6 col-lg-3  ">
               <SelectBox
                 style={reactSelectInputStyleHome}
                 options={makeOptions}

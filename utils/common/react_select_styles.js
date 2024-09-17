@@ -451,6 +451,7 @@ export const reactSelectInputStyleHome = {
     border: "none !important",
     fontSize: "13px",
     borderRadius: "5px",
+    
     // top: "50%",
     // transform: "translateY(-50%)",
     // WebkitBoxShadow: "1px 1px 5px 1px #222222",
@@ -520,13 +521,11 @@ export const reactSelectInputStyleHome = {
   container: (provided) => ({
     ...provided,
     bottom: "0",
-
     background: "#eeeeee",
-    // boxShadow: "0 2px 10px rgba(0, 0, 0, 0.16)",
     height: "50px",
     padding: "3px 0",
     borderRadius: "3px !important",
     border: "1px solid rgba(255, 255, 255, 0.18)",
-    // borderBottom: "2px solid #b22222",
+    border: '1px solid #ccc',
   }),
 };

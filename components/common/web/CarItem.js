@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaCamera, FaCheck, FaTachometerAlt } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { dashRemoverForSlug } from "../../../utils/common/dash_remover";
 import { priceComma } from "../../../utils/common/price_odometer_handler";
 import { useRouter } from "next/router";
@@ -102,6 +102,9 @@ const CarItem = ({
   const modalVdeoClose = () => {
     setVideo(false);
   };
+
+  const inputRef = useRef(null); 
+
 
   return (
     <>
@@ -394,8 +397,9 @@ const CarItem = ({
                   style={{ fontSize: "12px" }}
                 >
                   <input
+                    ref={inputRef} 
                     type="checkbox"
-                    className="p-0 m-0"
+                    className="p-0 m-0 custom-input"
                     name={car?.id}
                     id={car?.id}
                     style={{ cursor: "pointer" }}
@@ -422,6 +426,7 @@ const CarItem = ({
                       }
                     }}
                   />
+                  {/* <span onClick={()=>(inputRef.current.focus())} className="span-style"/> */}
                   <label className="p-0  pl-1 m-0">Add To Compare</label>
                 </div>
 
@@ -495,7 +500,7 @@ const CarItem = ({
             </span>
           </div>
 
-          <div className="p-0 m-0 py-1 d-flex flex-row justify-content-between align-items-center w-100">
+          <div className="p-0 m-0 py-3 d-flex flex-row justify-content-between align-items-center w-100">
             <p className="p-0 m-0 p__odometer">
               <FaTachometerAlt /> &nbsp;
               {priceComma(odometer, 2)} {odometer_type === 1 ? "Mi" : "Km"}
@@ -511,6 +516,7 @@ const CarItem = ({
                   className={`SELL-RICE d-inline inventory_p__price m-0 ${
                     special_price !== 0 && "inventory_p__sellprice_line"
                   } `}
+                  style={{color:'#2bc400'}}
                 >
                   $ {priceComma(sell_price, 2)}
                 </p>
@@ -644,7 +650,7 @@ const CarItem = ({
               </div>
             </div>
 
-            <div className="p-0 m-0 col-12 d-flex px-3 pb-2 row ">
+            <div className="p-0 mt-3 col-12 d-flex px-3 pb-2 row w-100">
               {car?.is_certified ? (
                 <span
                   className="p-0 m-0 col-6"
@@ -661,9 +667,9 @@ const CarItem = ({
               )}
               {car?.vehicle_site_detail?.carfax_link &&
                 Vehicle?.carfax_link && (
-                  <div className="p-0 m-0 carfax_inventory col-6">
+                  <div className="p-0 m-0  col-12 w-100 c">
                     <a
-                      className="p-0 m-0 w-100"
+                      className="p-0 m-0 w-100 d-flex justify-content-end"
                       href={Vehicle?.carfax_link}
                       target="_blank"
                       rel="noreferrer noopener"
@@ -682,9 +688,9 @@ const CarItem = ({
               {car?.vehicle_site_detail?.carfax_link &&
                 !Vehicle?.carfax_link &&
                 Vehicle?.carfax_pdf && (
-                  <div className="p-0 m-0 carfax_inventory col-6">
+                  <div className="p-0 m-0 mt-2 carfax_inventory col-12 ">
                     <a
-                      className="p-0 m-0 w-100"
+                      className="p-0 m-0 w-100 d-flex justify-content-end"
                       href={Vehicle?.carfax_pdf}
                       target="_blank"
                       rel="noreferrer noopener"
@@ -696,6 +702,7 @@ const CarItem = ({
                         style={{
                           height: "auto",
                           objectFit: "contain",
+                         
                         }}
                       />
                     </a>

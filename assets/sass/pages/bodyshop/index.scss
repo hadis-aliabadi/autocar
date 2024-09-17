@@ -608,16 +608,16 @@ p {
   font-weight: 700;
   font-family: "Open Sans";
   // color: #ececec !important;
-  font-size: 32px;
+  font-size: 27px;
 margin-bottom: 50px;
   @include tablet {
-    @include all_fonts_styles(25px, $fw-bold, inherit, #fff);
+    @include all_fonts_styles(25px, $fw-bold, inherit, #000);
   }
 
   @include mobile {
-    @include all_fonts_styles(25px, $fw-bold, inherit, #fff);
+    @include all_fonts_styles(25px, $fw-bold, inherit, #000);
   }
-  position: relative;
+ 
 
   // &::after {
   //   content: "";

@@ -7,7 +7,7 @@ export default function SubFooter({ data }) {
   return (
     <div
       className="p-0 m-0 py-2 w-100 col-12"
-      style={{ backgroundColor: "#292929", position: "relative" }}
+      style={{ backgroundColor: "#000", position: "relative" }}
     >
       <div className="p-0 m-0 d-flex flex-column flex-md-row align-items-center justify-content-center">
         <div className="p-0  m-0 footer_txt_border row">
