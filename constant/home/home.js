@@ -1,3 +1,6 @@
+import SliderTextOne from "../../components/layout/home/slider-text-one";
+import SliderTextTwo from "../../components/layout/home/slider-text-two";
+
 export const STATIC_COLOR = [
   "#FFFFFF",
   "#e61c1a",
@@ -63,3 +66,27 @@ export const GOOGLE_REVIEW = [
     img: "/icons/common/avatar.jpg",
   },
 ];
+
+
+export const SLIDER_DATA=[
+  {
+    img:'https://autobunny-docs.s3.ca-central-1.amazonaws.com/1042/web-content/img-1.png',
+    text:<SliderTextOne/>
+  },
+  {
+    img:'https://autobunny-docs.s3.ca-central-1.amazonaws.com/1042/web-content/img-2.png',
+    text:<SliderTextTwo/>
+  },
+]
+
+
+export const SLIDER_DATA_TWO=[
+  {
+    img:'https://autobunny-docs.s3.ca-central-1.amazonaws.com/1042/web-content/site_slider_filename.jpg',
+    text:<SliderTextTwo/>
+  },
+  {
+    img:'https://autobunny-docs.s3.ca-central-1.amazonaws.com/1042/web-content/site_slider2_filename.jpg',
+    text:<SliderTextOne/>
+  },
+]

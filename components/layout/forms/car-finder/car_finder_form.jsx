@@ -102,12 +102,12 @@ const CarFinderForm = (props) => {
   return (
     <>
       <div className="p-0 m-0 w-100">
-        {typeof otherFormik === "undefined" && (
+        {/* {typeof otherFormik === "undefined" && (
           <EFormsHeaderSection
             image={dealerData?.prefixUrl + dealerData?.carFinder_image_url}
             showImage={true}
           />
-        )}
+        )} */}
         <div
           className={`px-0 ${
             typeof otherFormik === "undefined" ? "px-md-5" : "px-md-2"

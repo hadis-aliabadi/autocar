@@ -34,7 +34,7 @@ const TwoCard = () => {
         </div>
 
        
-        <div className="col-12 col-lg-6 ">
+        <div className="col-12 col-lg-6 p-0 m-0">
           <div className="d-flex  cta-car-left-twopart" >
             
             <div className="image-container d-none d-md-block">
@@ -46,7 +46,7 @@ const TwoCard = () => {
               />
             </div>
            
-            <div className="py-4 px-1 flex-grow-1 bg-white d-flex flex-column align-items-start justify-content-center">
+            <div className=" px-1 flex-grow-1 bg-white d-flex flex-column align-items-start justify-content-center">
                 <p className='font-weight-bold ' style={{fontSize:'22px'}}>Finance Your Vehicle.</p>
                 <p className="" style={{marginTop:'20px'}}>Find out your payment.</p>
                 <div style={{marginTop:'20px'}}>

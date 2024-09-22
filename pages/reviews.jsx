@@ -39,20 +39,21 @@ const Direction = ({dealerData}) => {
           href={`${dealerData?.prefixUrl}${dealerData?.logo_url}`}
         />
       </Head>
-      <div className="p-5">
+      <div className="header_image w-100" />
+      <div className="p-5 w-100">
         <h1 style={{fontSize:'28px'}} className="p-2 font-weight-bold ">Reviews</h1>
         <div
           style={{ backgroundColor: "#f6f6f6" }}
-          className="p-0 col-12 row justify-content-center  m-0 w-100 "
+          className="p-0 col-12 row d-flex justify-content-center align-items-center  m-0 w-100 "
         >
           {/* <div className="col-12 d-flex p-0 m-0 justify-content-center overflos-container-slider py-5 ">
             <GoogleReviewsHomePage />
           </div> */}
           
-          <div className="container mt-5">
+          <div className="container mt-5 w-100">
           {GoogleReviewData?.map((review, index) =>  (
               <div className="row w-100 mb-5">
-                <div className="col-12 col-lg-2 p-0 ">
+                <div className="col-12 col-lg-2 p-0 w-100">
                   <div className="col d-flex justify-content-start">
                           <img
                             className=""
@@ -82,7 +83,7 @@ const Direction = ({dealerData}) => {
                           </div>
                   </div>
                 </div>
-                <div className="col-12 col-lg-8 p-5 mt-2 mt-lg-0 at-ts-right" style={{background:'#e4e4e4'}}>
+                <div className="col-12 col-lg-8 p-5 mt-2 mt-lg-0 at-ts-right " style={{background:'#e4e4e4'}}>
                   {review?.desc}
                 </div>
               </div>

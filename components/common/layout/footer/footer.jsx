@@ -11,11 +11,13 @@ import {
   FaGooglePlus,
   FaMobileAlt,
   FaEnvelope,
+  FaFacebookSquare,
 } from "react-icons/fa";
 import OperationHoures from "./operationhouers";
 import { phonenumberConvertor } from "../../../../utils/common/phone_number_converter";
 import { findScript } from "../../../../utils/common/html_script";
 import { FaXTwitter } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 const FooterCustomerWeb = React.forwardRef((props, ref) => {
   const { data, timeWork } = props;
@@ -42,7 +44,7 @@ const FooterCustomerWeb = React.forwardRef((props, ref) => {
       </div> */}
       
       <div
-        className="p-0 m-0 footer_div_container row g-0 w-100 px-3"
+        className="p-0 m-0 footer_div_container row g-0 w-100 px-md-3"
         style={{ backgroundColor: "#000" }}
       >
         
@@ -166,12 +168,26 @@ const FooterCustomerWeb = React.forwardRef((props, ref) => {
                             {data?.business_phone}
                           </a>
                         </div>
-
+                        <div className=" p-0 m-0 d-flex py-1 footer_desc_container justlfy-content-center align-items-center ">
+                          <MdEmail color="#fff" className="" />
+                          <a
+                            href={phonenumberConvertor(data?.business_phone)}
+                            rel="noopener noreferrer"
+                            className="p-0 m-0 text-decoration-none px-2 "
+                            style={{ color: "#fff" }}
+                          >
+                            sales@autokart.ca 
+                            <FaFacebookSquare size={25}  className="ml-1"/>
+                            <FaInstagram size={25} />
+                          </a>
+                        </div>
+                        
+{/* 
                         {data?.business_fax ? (
                           <h5 className="footer_desc_container py-1">
                             Fax: {data?.business_fax}
                           </h5>
-                        ) : null}
+                        ) : null} */}
                       </div>
                       <div className=" p-0 m-0 d-flex align-items-center justify-content-start mt-2">
                         <div className="p-0 m-0 d-flex flex-wrap  justify-content-end align-items-center header__social-container ">

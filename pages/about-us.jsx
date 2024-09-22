@@ -58,45 +58,51 @@ const Services = (props) => {
           </div>
         </div>
       </div> */}
-      <div className="container p-5">
-      <div className="row">
-        <div className="main-content-inner col-sm-12 col-md-12">
-          <div id="primary" className="content-area">
-            <main id="main" className="site-main" role="main">
-              <div className="post-inner-content">
-                <header className="entry-header page-header">
-                  <h1 style={{ fontWeight: 'bold', fontSize: '23px' }}>Dealership</h1>
-                </header>
-
-                <div style={{ fontWeight: 'bold', fontSize: '23px', paddingBottom: '10px' }}>
-                  Welcome to Autokart Automotives!
-                </div>
-                <div style={{  fontSize: '14px' }}>
-                  <p>
-                    With over 35 years of experience in the automotive industry we are proud to be one of the most reliable and trustworthy used car dealerships in Toronto and GTA providing quality pre-owned vehicles. You can be assured to find your dream car that feels like new without the new car price tag at Autokart.
-                  </p>
-                
-                  <p className="my-3">
-                    With customer satisfaction being our top most priority you can expect us to help make your experience a smooth as we guarantee:
-                  </p>
-
-                  <p >Full transparency right from the moment you step in till the vehicle delivery.</p>
-
-                  <ul className="my-3">
-                    <li>Complete Vehicle disclosure.</li>
-                    <li>Dynamic Market Value, hassle and haggle free pricing.</li>
-                    <li>Pressure free buying experience.</li>
-                    <li>Easy financing options for all.</li>
-                  </ul>
-
-                  <p>Rest assured we are OMVIC approved and proud members of the UCDA.</p>
-                </div>
-              </div>
-            </main>
-          </div>
+        <div className="row w-100">
+          <div className="header_image w-100" />
         </div>
-      </div>
-    </div>
+        <div className="container my-[40px] w-100">
+          <div className="row">
+            <div className="main-content-inner col-sm-12 col-md-12">
+              <div id="primary" className="content-area">
+                <main id="main" className="site-main" role="main">
+                  <div className="post-inner-content">
+                    <header className="entry-header page-header">
+                      <h1 style={{ fontWeight: 'bold', fontSize: '28px' }}>Dealership</h1>
+                    </header>
+
+                    <div style={{ fontWeight: 'bold', fontSize: '23px', paddingBottom: '10px' }}>
+                      Welcome to Autokart Automotives!
+                    </div>
+                    <div style={{  fontSize: '14px' }}>
+                      <p>
+                        With over 35 years of experience in the automotive industry we are proud to be one of the most reliable and trustworthy used car dealerships in Toronto and GTA providing quality pre-owned vehicles. You can be assured to find your dream car that feels like new without the new car price tag at Autokart.
+                      </p>
+                    
+                      <p className="my-3">
+                        With customer satisfaction being our top most priority you can expect us to help make your experience a smooth as we guarantee:
+                      </p>
+
+                      <p >Full transparency right from the moment you step in till the vehicle delivery.</p>
+
+                      {/* <ul className="my-3">
+                        <li>Complete Vehicle disclosure.</li>
+                        <li>Dynamic Market Value, hassle and haggle free pricing.</li>
+                        <li>Pressure free buying experience.</li>
+                        <li>Easy financing options for all.</li>
+                      </ul> */}
+                       <div className="my-3">
+                        <p>a) Complete Vehicle disclosure.<br/> b) Dynamic Market Value, hassle and haggle free pricing.<br/> c) Pressure free buying experience.<br/> d) Easy financing options for all.</p>
+                       </div>
+                      <p>Rest assured we are OMVIC approved and proud members of the UCDA.</p>
+                    </div>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </div>
+          </div>
+        
     </>
   );
 };

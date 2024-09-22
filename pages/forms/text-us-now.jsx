@@ -97,13 +97,14 @@ export default function ContactUpPage(props) {
           href={`${dealerData?.prefixUrl}${dealerData?.logo_url}`}
         />
       </Head>
+      <div className="header_image w-100" />
       <div className="p-0 m-0 w-100">
-        <div className="p-0 m-0 mb-3">
+        {/* <div className="p-0 m-0 mb-3">
           <EFormsHeaderSection
             image={dealerData?.prefixUrl + dealerData?.text_us_now_url}
             showImage={true}
           />
-        </div>
+        </div> */}
 
         <div className="px-0 px-md-5 px-xl-4 py-3 m-0 row w-100 justify-content-center align-items-start ">
           <div className="row col-12 col-lg-10 p-0 pt-2 px-2 px-lg-0">

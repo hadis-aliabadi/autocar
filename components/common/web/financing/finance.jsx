@@ -67,7 +67,7 @@ const FinanceComponent = () => {
 
             <div className="row">
               <div className="col-sm-12 mt-5">
-                <div className="row  shadow" style={{borderRadius:'15px'}}>
+                <div className="row  f-section" >
                   <div className="col-md-6" style={{ padding: '60px 0 0 40px' }}>
                     <h2 className='font-weight-bold' style={{fontSize:'24px'}}>Get Pre-Approved Before Buying</h2>
                     <div className="space-10"></div>

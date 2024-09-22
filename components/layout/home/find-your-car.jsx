@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const FindYourCar = () => {
   return (
     
-      <div className="row  shadow-sm w-100 " style={{ margin: '5% 10%' ,borderRadius:'15px',backgroundColor:'#fff'}}>
+      <div className="row  f3-section w-100 " style={{ margin: '5% 10%' ,backgroundColor:'#fff'}}>
       <div className="col-md-12 p-5 ">
         <h2 className='text-center font-weight-bolder'>Find Your Next Car</h2>
       </div>

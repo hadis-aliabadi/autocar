@@ -171,10 +171,15 @@ textarea {
 }
 
 .eforms_calculator_icons {
-  background-color: #ccc;
-  border-radius: 0px 5px 5px 0px;
-  color: #333333;
-  height: 37px;
+  padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 .eform_contact_container {
   @include desktop {
@@ -224,3 +229,47 @@ textarea {
   margin-bottom: 4px !important;
   font-weight: bold !important;
 }
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+ 
+}
+
+// .table .table {
+//   background-color: #fff;
+// }
+
+.table>thead:first-child>tr:first-child>th {
+  border-top: 0;
+  
+}
+
+
+table-striped thead>tr th {
+  border-right: 1px solid #f9f9f9;
+  background-color: #ddd;
+}
+
+.table>thead>tr>th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 8px;
+  line-height: 1.42857143;
+ 
+}
+
+
+.table-striped th {
+  font-size: 13px;
+}
+

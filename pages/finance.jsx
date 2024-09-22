@@ -42,9 +42,12 @@ const FinanceMain = props => {
         />
       </Head>
 
-      <EFormsHeaderSection
+      {/* <EFormsHeaderSection
         image={dealerData?.prefixUrl + dealerData?.serviceApointment_image_url}
-      />
+      /> */}
+      <div className="row w-100">
+        <div className="header_image w-100" />
+      </div>
       <FinanceComponent/>
       <FindYourCar/>
       {/* <div className="p-0 m-0 row w-100 justify-content-center align-items-center ">

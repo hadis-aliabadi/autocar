@@ -121,12 +121,13 @@ export default function ContactUpPage(props) {
           href={`${dealerData?.prefixUrl}${dealerData?.logo_url}`}
         />
       </Head>
+      <div className="header_image w-100" />
       <div style={{ backgroundColor: "#f6f6f6" }} className="p-0 m-0 w-100">
         <div className="p-0 m-0 w-100 row justify-content-center contact_us_pos">
-          <EFormsHeaderSection
+          {/* <EFormsHeaderSection
             image={dealerData?.prefixUrl + dealerData?.contactUs_image_url}
             showImage={true}
-          />
+          /> */}
           <div className="row col-12 col-lg-10 p-0 m-0 pt-4 px-4 px-xl-0">
             <div className="p-1 p-md-3 m-0 col-12 col-lg-7 col-xl-8 ">
               <div
@@ -284,7 +285,7 @@ export default function ContactUpPage(props) {
                           ) : (
                             <button
                               type="submit"
-                              className="btn blue_button_3 w-75"
+                              className="btn blue_button_3 "
                               onClick={handleClickSubmit}
                             >
                               Send

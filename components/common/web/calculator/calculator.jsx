@@ -342,6 +342,9 @@ const CalculatoreCustomerWeb = (props) => {
                   Vehicle Price
                 </label>
                 <div className="  col-12 p-0 m-0 row">
+                <div className="col-1 p-0 m-0 d-flex justify-content-center align-items-center eforms_calculator_icons">
+                    $
+                  </div>
                   <NumberFormat
                     onValueChange={(e) => {
                       if (e.floatValue) {
@@ -350,7 +353,7 @@ const CalculatoreCustomerWeb = (props) => {
                         formik.setFieldValue("vehiclePrice", "");
                       }
                     }}
-                    className="form-control eforms_input_container col-9"
+                    className="form-control eforms_input_container col-11"
                     id="vehiclePrice"
                     name="vehiclePrice"
                     // placeholder="Vehicle Price"
@@ -359,9 +362,7 @@ const CalculatoreCustomerWeb = (props) => {
                     value={formik.values.vehiclePrice}
                     // prefix={"$ "}
                   />
-                  <div className="col-3 p-0 m-0 d-flex justify-content-center align-items-center eforms_calculator_icons">
-                    $
-                  </div>
+                  
                 </div>
               </div>
               {formik.errors.vehiclePrice && (
@@ -380,7 +381,10 @@ const CalculatoreCustomerWeb = (props) => {
                   Down payment
                 </label>
                 <div className="  col-12 p-0 m-0 row">
-                  <NumberFormat
+                  <div className="col-1 p-0 m-0 d-flex justify-content-center align-items-center eforms_calculator_icons">
+                    $
+                  </div>
+                    <NumberFormat
                     onValueChange={(e) => {
                       if (e.floatValue) {
                         formik.setFieldValue("downPayment", e.floatValue);
@@ -388,7 +392,7 @@ const CalculatoreCustomerWeb = (props) => {
                         formik.setFieldValue("downPayment", "");
                       }
                     }}
-                    className="form-control eforms_input_container col-9"
+                    className="form-control eforms_input_container col-11"
                     id="downPayment"
                     name="downPayment"
                     // placeholder="Down payment"
@@ -397,9 +401,6 @@ const CalculatoreCustomerWeb = (props) => {
                     value={formik.values.downPayment}
                     // prefix={"$ "}
                   />
-                  <div className="col-3 p-0 m-0 d-flex justify-content-center align-items-center eforms_calculator_icons">
-                    $
-                  </div>
                 </div>
               </div>
               {formik.errors.downPayment && (
@@ -418,6 +419,9 @@ const CalculatoreCustomerWeb = (props) => {
                   Your trade
                 </label>
                 <div className="  col-12 p-0 m-0 row">
+                <div className="col-1 p-0 m-0 d-flex justify-content-center align-items-center eforms_calculator_icons">
+                    $
+                  </div>
                   <NumberFormat
                     onValueChange={(e) => {
                       if (e.floatValue) {
@@ -426,7 +430,7 @@ const CalculatoreCustomerWeb = (props) => {
                         formik.setFieldValue("tradeValue", "");
                       }
                     }}
-                    className="form-control eforms_input_container col-9"
+                    className="form-control eforms_input_container col-11"
                     id="tradeValue"
                     name="tradeValue"
                     // placeholder="Your trade"
@@ -435,9 +439,7 @@ const CalculatoreCustomerWeb = (props) => {
                     value={formik.values.tradeValue}
                     // prefix={"$ "}
                   />
-                  <div className="col-3 p-0 m-0 d-flex justify-content-center align-items-center eforms_calculator_icons">
-                    $
-                  </div>
+                  
                 </div>
               </div>
               {formik.errors.tradeValue && (
@@ -511,7 +513,7 @@ const CalculatoreCustomerWeb = (props) => {
                         formik.setFieldValue("intRate", "");
                       }
                     }}
-                    className="form-control eforms_input_container col-9"
+                    className="form-control eforms_input_container col-11"
                     id="intRate"
                     name="intRate"
                     // placeholder="Your trade"
@@ -520,7 +522,7 @@ const CalculatoreCustomerWeb = (props) => {
                     value={formik.values.intRate}
                     // prefix={"$ "}
                   />
-                  <div className="col-3 p-0 m-0 d-flex justify-content-center align-items-center eforms_calculator_icons">
+                  <div className="col-1 p-0 m-0 d-flex justify-content-center align-items-center eforms_calculator_icons">
                     %
                   </div>
                 </div>
@@ -758,7 +760,39 @@ const CalculatoreCustomerWeb = (props) => {
           </div>
         </div>
       </form>
-      <div className="row w-100 m-0 p-0 justify-content-start align-items-center mt-5">
+      <div className="container-fluid">
+        <table className="table table-striped" id="payment-table">
+          <thead>
+            <tr>
+              <th>Payment Frequency</th>
+              <th>Payment Amount</th>
+              <th className="align-center">
+              <span className="desktop-nowrap">Total Interest to be Paid</span>
+              <span className="desktop-nowrap">over the Duration</span>
+              <span className="desktop-nowrap"> of the Loan</span>
+              </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th className="center">Monthly</th>
+            <td className="center" id="monthly-mp">$0.00</td>
+            <td className="center" id="monthly-timp">$0.00</td>
+          </tr>
+          <tr>
+            <th className="center">Bi-weekly</th>
+            <td className="center" id="bi-weekly-bwp">$0.00</td>
+            <td className="center" id="bi-weekly-tibwp">$0.00</td>
+          </tr>
+          <tr>
+            <th className="center">Weekly</th>
+            <td className="center" id="weekly-wp">$0.00</td>
+            <td className="center" id="weekly-tiwp">$0.00</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div className="row w-100 m-0 p-0 justify-content-start align-items-center mt-5 mx-2">
         <Link href="/forms/finance">
           <a className="btn blue_button_3 col-12 col-md-4 px-3 py-2">
             Apply For Financing

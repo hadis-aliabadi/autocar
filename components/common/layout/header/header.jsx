@@ -103,7 +103,7 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
             <div className="p-0 m-0 row w-100 px-0 text-dark d-flex justify-content-between align-items-center">
             {showMobile && (
               <div
-                className={`p-0 m-0 pt-5 col-12 d-flex flex-column justify-content-start align-items-start mobile_menu_container ${
+                className={`p-0 m-0 pt-md-5 col-12 d-flex flex-column justify-content-start align-items-start mobile_menu_container ${
                   showMobile && "mobile_menu_container_open py-2"
                 }
                 ${
@@ -133,7 +133,7 @@ const HeaderCustomerWeb = React.forwardRef((props, ref) => {
                         setParent={setParent}
                         parent={parent}
                         parentId={index}
-                        className=" header_a__navlink header_a__navlink_mobile py-2 "
+                        className=" header_a__navlink header_a__navlink_mobile py-3 "
                         disabledDesktopClass={true}
                       />
                     </div>

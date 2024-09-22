@@ -75,7 +75,7 @@ p {
       z-index: 561456148956145;
       transform: translateY(0);
       pointer-events: all;
-      color: #111112;
+      color: #000;
 
       .header_a__navlink_submenu_content {
         transform: translateY(0);
@@ -128,9 +128,6 @@ p {
 .header_a__navlink_submenu {
   background-color: #fff;
 
-  &:hover {
-    background-color: #ffffffdb !important;
-  }
 }
 
 .svg_icons_sizing {
@@ -153,6 +150,7 @@ p {
 
 .header_a__active {
   animation: blinker 1s linear infinite;
+
   // @include all_fonts_styles(14px, 600, $main-font, $main-color);
   // @media screen and(min-width: 991px) and(max-width: 1124px) {
   //   @include all_fonts_styles(14px, 600, $main-font, $main-color !important);
@@ -168,7 +166,6 @@ p {
 .header_a__navlink_mobile {
   border: none;
   z-index: 2;
-
   &:hover {
     @include all_fonts_styles(14px, 500, $main-font, #000 !important);
   }
@@ -239,7 +236,7 @@ p {
   }
 }
 .header_a__navlink_mobile.active {
-  color: #3f2972 !important;
+  color: $main-color !important;
 }
 
 .navbar_txt_size {

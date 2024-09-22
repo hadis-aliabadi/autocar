@@ -33,7 +33,7 @@ p {
   margin-bottom: 0;
 }
 .swiper-pagination-bullet {
-  background-color: #00000055 !important;
+  background-color: #3b3b3b6e !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   width: 40px !important;
@@ -45,7 +45,7 @@ p {
   color: #fff !important;
 }
 .swiper-pagination-bullet-active {
-  background-color: $black-color !important;
+  background-color: #3b3b3b6e !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   width: 40px !important;
@@ -393,3 +393,10 @@ p {
   }
 }
 
+.header_image{
+  background: url('https://autobunny-docs.s3.ca-central-1.amazonaws.com/1042/web-content/site_about_header_filename.jpg') ;
+  height: 300px !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
